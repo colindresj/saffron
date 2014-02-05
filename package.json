@@ -1,0 +1,30 @@
+{
+  "name": "SurfBuddy",
+  "description": "A library of Sass mixins for animation.",
+  "version": "0.0.1",
+  "keywords": [
+    "sass",
+    "scss",
+    "animation"
+  ],
+  "author": {
+    "name": "JC",
+    "email": "jorge.e.colindres@gmail.com",
+    "url": "http://colindres.me"
+  },
+  "licenses": [
+    "MIT"
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-sass": "~0.7.2",
+    "grunt-csscomb": "~2.0.1",
+    "grunt-contrib-csslint": "~0.2.0",
+    "grunt-contrib-cssmin": "~0.7.0"
+  }
+}
