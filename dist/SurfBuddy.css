@@ -1,86 +1,48 @@
 /*! SurfBuddy - v0.0.1 - 2014-02-05
 * Copyright (c) 2014 JC; Licensed MIT */
 
-@-webkit-keyframes fadeInUp {
+@-webkit-keyframes fadeIn {
   0% {
-            opacity: 0;
-    -webkit-transform: translateY(2em);
-            transform: translateY(2em);
-
-    -webkit-opacity: 0;
+    opacity: 0;
   }
 
   100% {
-            opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-
-    -webkit-opacity: 1;
+    opacity: 1;
   }
 }
 
-@-moz-keyframes fadeInUp {
+@-moz-keyframes fadeIn {
   0% {
-         opacity: 0;
-    -moz-transform: translateY(2em);
-         transform: translateY(2em);
-
-    -moz-opacity: 0;
+    opacity: 0;
   }
 
   100% {
-         opacity: 1;
-    -moz-transform: translateY(0);
-         transform: translateY(0);
-
-    -moz-opacity: 1;
+    opacity: 1;
   }
 }
 
-@-o-keyframes fadeInUp {
+@-o-keyframes fadeIn {
   0% {
-       opacity: 0;
-    -o-transform: translateY(2em);
-       transform: translateY(2em);
-
-    -o-opacity: 0;
+    opacity: 0;
   }
 
   100% {
-       opacity: 1;
-    -o-transform: translateY(0);
-       transform: translateY(0);
-
-    -o-opacity: 1;
+    opacity: 1;
   }
 }
 
-@keyframes fadeInUp {
+@keyframes fadeIn {
   0% {
-            opacity: 0;
-    -webkit-transform: translateY(2em);
-       -moz-transform: translateY(2em);
-        -ms-transform: translateY(2em);
-         -o-transform: translateY(2em);
-            transform: translateY(2em);
-
-    -webkit-opacity: 0;
-       -moz-opacity: 0;
-         -o-opacity: 0;
-        -ms-opacity: 0;
+    opacity: 0;
   }
 
   100% {
-            opacity: 1;
-    -webkit-transform: translateY(0);
-       -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-         -o-transform: translateY(0);
-            transform: translateY(0);
-
-    -webkit-opacity: 1;
-       -moz-opacity: 1;
-         -o-opacity: 1;
-        -ms-opacity: 1;
+    opacity: 1;
   }
+}
+
+.box {
+  -webkit-animation: fadeIn 1s;
+     -moz-animation: fadeIn 1s;
+          animation: fadeIn 1s;
 }
