@@ -43,4 +43,7 @@
   @else if $only == "ms" {
     $prefixes: ("ms", "spec");
   }
+  @else {
+    @warn "Unknown prefix: #{$only}";
+  }
 }
