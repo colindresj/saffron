@@ -1,0 +1,13 @@
+@include keyframes(explode) {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    @include transform(scale(5));
+  }
+}
+
+@mixin explode() {
+  @include animation(explode .5s);
+}
