@@ -1,0 +1,24 @@
+@include keyframes(wobble) {
+  0%, 100% {
+    @include transform(rotate(0deg));
+  }
+  15% {
+    @include transform(rotate($wobble-angle));
+  }
+  35% {
+    @include transform(rotate($wobble-angle * -1));
+  }
+  50% {
+    @include transform(rotate($wobble-angle / 2));
+  }
+  65% {
+    @include transform(rotate($wobble-angle / 2 * -1));
+  }
+  85% {
+    @include transform(rotate($wobble-angle / 3));
+  }
+}
+
+@mixin wobble($duration: 1s) {
+  @include animation(wobble $duration);
+}

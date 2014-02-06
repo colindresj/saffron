@@ -1,0 +1,24 @@
+@include keyframes(shake) {
+  0%, 100% {
+    @include transform(translateX(0));
+  }
+  15% {
+    @include transform(translateX($shake-distance));
+  }
+  35% {
+    @include transform(translateX($shake-distance * -1));
+  }
+  50% {
+    @include transform(translateX($shake-distance / 2));
+  }
+  65% {
+    @include transform(translateX($shake-distance / 2 * -1));
+  }
+  85% {
+    @include transform(translateX($shake-distance / 3));
+  }
+}
+
+@mixin shake($duration: 0.5s) {
+  @include animation(shake $duration);
+}
