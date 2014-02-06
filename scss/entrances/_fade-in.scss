@@ -8,5 +8,6 @@
 }
 
 @mixin fadeIn($duration: 1s) {
+  opacity: 1;
   @include animation(fadeIn $duration);
 }

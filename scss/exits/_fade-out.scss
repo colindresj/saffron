@@ -1,0 +1,13 @@
+@include keyframes(fadeOut) {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@mixin fadeOut($duration: 1s) {
+  opacity: 0;
+  @include animation(fadeOut $duration);
+}

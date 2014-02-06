@@ -14,6 +14,20 @@ module.exports = function(grunt) {
 
     // Task configuration.
     watch: {
+      sass: {
+        files: '**/*.scss',
+        tasks: 'default',
+        options: {
+          livereload: true
+        },
+      },
+    },
+    connect: {
+      server: {
+        options: {
+          port: 7000
+        }
+      }
     },
     clean: {
       dist: ['dist/*']
@@ -61,6 +75,7 @@ module.exports = function(grunt) {
   });
 
   // These plugins provide necessary tasks.
+  grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-sass');
@@ -69,6 +84,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Default task.
+  grunt.registerTask('livereload', ['connect', 'watch']);
   grunt.registerTask('default', ['clean', 'sass', 'csscomb', 'csslint', 'cssmin']);
 
 };

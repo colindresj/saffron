@@ -1,0 +1,3 @@
+@mixin transition ($properties...) {
+  @include prefix(transition, $properties, webkit spec);
+}

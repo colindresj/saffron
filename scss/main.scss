@@ -4,10 +4,14 @@
 // Helper Mixins
 @import "helpers/prefix";
 @import "helpers/animation";
+@import "helpers/transition";
 @import "helpers/keyframes";
 
 // Entrances
 @import "entrances/fade-in";
+
+// Exits
+@import "exits/fade-out";
 
 // Test
 @import "test";

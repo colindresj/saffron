@@ -1,4 +1,4 @@
-/*! SurfBuddy - v0.0.1 - 2014-02-05
+/*! SurfBuddy - v0.0.1 - 2014-02-06
 * Copyright (c) 2014 JC; Licensed MIT */
 
 @-webkit-keyframes fadeIn {
@@ -41,8 +41,53 @@
   }
 }
 
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .box {
+  opacity: 1;
   -webkit-animation: fadeIn 1s;
-     -moz-animation: fadeIn 1s;
           animation: fadeIn 1s;
+}
+.box:hover {
+  opacity: 0;
+  -webkit-animation: fadeOut 1s;
+          animation: fadeOut 1s;
 }
