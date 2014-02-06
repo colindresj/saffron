@@ -1,6 +1,6 @@
 @include keyframes(popIn) {
   0% {
-    @include transform(scale(.25));
+    @include transform(scale(0.25));
     opacity: 0;
   }
   100% {
@@ -9,6 +9,6 @@
   }
 }
 
-@mixin popIn() {
-  @include animation(popIn .5s);
+@mixin popIn($duration: 0.5s) {
+  @include animation(popIn $duration);
 }

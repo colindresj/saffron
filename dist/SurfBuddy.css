@@ -405,7 +405,63 @@
   }
 }
 
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(-.25rem);
+        -ms-transform: translateY(-.25rem);
+            transform: translateY(-.25rem);
+  }
+
+  100% {
+    -webkit-transform: translateY(.25rem);
+        -ms-transform: translateY(.25rem);
+            transform: translateY(.25rem);
+  }
+}
+
+@-moz-keyframes float {
+  0% {
+    -webkit-transform: translateY(-.25rem);
+        -ms-transform: translateY(-.25rem);
+            transform: translateY(-.25rem);
+  }
+
+  100% {
+    -webkit-transform: translateY(.25rem);
+        -ms-transform: translateY(.25rem);
+            transform: translateY(.25rem);
+  }
+}
+
+@-o-keyframes float {
+  0% {
+    -webkit-transform: translateY(-.25rem);
+        -ms-transform: translateY(-.25rem);
+            transform: translateY(-.25rem);
+  }
+
+  100% {
+    -webkit-transform: translateY(.25rem);
+        -ms-transform: translateY(.25rem);
+            transform: translateY(.25rem);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(-.25rem);
+        -ms-transform: translateY(-.25rem);
+            transform: translateY(-.25rem);
+  }
+
+  100% {
+    -webkit-transform: translateY(.25rem);
+        -ms-transform: translateY(.25rem);
+            transform: translateY(.25rem);
+  }
+}
+
 .box {
-  -webkit-animation: explode .5s;
-          animation: explode .5s;
+  -webkit-animation: float 1.5s ease-in-out infinite alternate;
+          animation: float 1.5s ease-in-out infinite alternate;
 }
