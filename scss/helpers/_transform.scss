@@ -1,0 +1,3 @@
+@mixin transform($property: none) {
+  @include prefix(transform, $property, webkit ms spec);
+}
