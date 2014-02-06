@@ -5,13 +5,18 @@
 @import "helpers/prefix";
 @import "helpers/animation";
 @import "helpers/transition";
+@import "helpers/transform";
 @import "helpers/keyframes";
 
 // Entrances
 @import "entrances/fade-in";
+@import "entrances/fade-in-up";
+@import "entrances/fade-in-down";
 
 // Exits
 @import "exits/fade-out";
+@import "exits/fade-out-down";
+@import "exits/fade-out-up";
 
 // Test
 @import "test";

@@ -1,0 +1,14 @@
+@include keyframes(fadeOutUp) {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    @include transform(translateY($translateY-distance * -1));
+  }
+}
+
+@mixin fadeOutUp($duration: 1s) {
+  opacity: 1;
+  @include animation(fadeOutUp $duration);
+}
