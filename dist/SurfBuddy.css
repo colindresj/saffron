@@ -313,6 +313,68 @@
   }
 }
 
+@-webkit-keyframes popIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.25);
+            transform: scale(.25);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-moz-keyframes popIn {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(.25);
+         transform: scale(.25);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: scale(1);
+         transform: scale(1);
+  }
+}
+
+@-o-keyframes popIn {
+  0% {
+    opacity: 0;
+    -o-transform: scale(.25);
+       transform: scale(.25);
+  }
+
+  100% {
+    opacity: 1;
+    -o-transform: scale(1);
+       transform: scale(1);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.25);
+       -moz-transform: scale(.25);
+        -ms-transform: scale(.25);
+         -o-transform: scale(.25);
+            transform: scale(.25);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+        -ms-transform: scale(1);
+         -o-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 @-webkit-keyframes fadeOut {
   0% {
     opacity: 1;
@@ -611,68 +673,6 @@
         -ms-transform: scale(0);
          -o-transform: scale(0);
             transform: scale(0);
-  }
-}
-
-@-webkit-keyframes popIn {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(.25);
-            transform: scale(.25);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@-moz-keyframes popIn {
-  0% {
-    opacity: 0;
-    -moz-transform: scale(.25);
-         transform: scale(.25);
-  }
-
-  100% {
-    opacity: 1;
-    -moz-transform: scale(1);
-         transform: scale(1);
-  }
-}
-
-@-o-keyframes popIn {
-  0% {
-    opacity: 0;
-    -o-transform: scale(.25);
-       transform: scale(.25);
-  }
-
-  100% {
-    opacity: 1;
-    -o-transform: scale(1);
-       transform: scale(1);
-  }
-}
-
-@keyframes popIn {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(.25);
-       -moz-transform: scale(.25);
-        -ms-transform: scale(.25);
-         -o-transform: scale(.25);
-            transform: scale(.25);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-       -moz-transform: scale(1);
-        -ms-transform: scale(1);
-         -o-transform: scale(1);
-            transform: scale(1);
   }
 }
 
@@ -1720,7 +1720,6 @@
 }
 
 .box {
-  opacity: 1;
-  -webkit-animation: fadeOutZoomBig 1s 0;
-          animation: fadeOutZoomBig 1s 0;
+  -webkit-animation: explode .5s 0;
+          animation: explode .5s 0;
 }

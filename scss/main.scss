@@ -14,6 +14,7 @@
 @import "entrances/fade-in-down";
 @import "entrances/fade-in-zoom";
 @import "entrances/fade-in-zoom-big";
+@import "entrances/pop-in";
 
 // Exits
 @import "exits/fade-out";
@@ -21,10 +22,9 @@
 @import "exits/fade-out-up";
 @import "exits/fade-out-zoom";
 @import "exits/fade-out-zoom-big";
+@import "exits/explode";
 
 // In Place
-@import "in-place/pop-in";
-@import "in-place/explode";
 @import "in-place/float";
 @import "in-place/shake";
 @import "in-place/teeter";
