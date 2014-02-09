@@ -8,7 +8,7 @@
   }
 }
 
-@mixin fadeOutDown($duration: 1s) {
+@mixin fadeOutDown($duration: 1s, $delay: 0) {
   opacity: 1;
-  @include animation(fadeOutDown $duration);
+  @include animation(fadeOutDown $duration $delay);
 }

@@ -1,0 +1,20 @@
+@include keyframes(fadeOutZoomBig) {
+  0% {
+    @include transform(scale(1));
+  }
+  40% {
+    @include transform(scale(1.25));
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    @include transform(scale(0));
+  }
+}
+
+@mixin fadeOutZoomBig($duration: 1s, $delay: 0) {
+  opacity: 1;
+  @include animation(fadeOutZoomBig $duration $delay);
+}

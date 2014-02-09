@@ -12,11 +12,15 @@
 @import "entrances/fade-in";
 @import "entrances/fade-in-up";
 @import "entrances/fade-in-down";
+@import "entrances/fade-in-zoom";
+@import "entrances/fade-in-zoom-big";
 
 // Exits
 @import "exits/fade-out";
 @import "exits/fade-out-down";
 @import "exits/fade-out-up";
+@import "exits/fade-out-zoom";
+@import "exits/fade-out-zoom-big";
 
 // In Place
 @import "in-place/pop-in";
@@ -28,6 +32,7 @@
 @import "in-place/sway";
 @import "in-place/spin";
 @import "in-place/bounce";
+@import "in-place/pulsate";
 
 // Test
 @import "test";
