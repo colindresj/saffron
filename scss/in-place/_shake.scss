@@ -19,6 +19,6 @@
   }
 }
 
-@mixin shake($duration: 0.5s) {
-  @include animation(shake $duration);
+@mixin shake($duration: 0.5s, $delay: 0, $count: 1) {
+  @include animation(shake $duration $delay $count);
 }

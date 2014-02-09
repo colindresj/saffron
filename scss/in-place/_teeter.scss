@@ -1,0 +1,27 @@
+@include keyframes(teeter) {
+  0%, 100% {
+    @include transform(rotate(0deg));
+  }
+  15% {
+    @include transform(rotate($teeter-angle));
+  }
+  30% {
+    @include transform(rotate($teeter-angle * -1));
+  }
+  45% {
+    @include transform(rotate($teeter-angle / 2));
+  }
+  60% {
+    @include transform(rotate($teeter-angle / 2 * -1));
+  }
+  73% {
+    @include transform(rotate($teeter-angle / 3));
+  }
+  86% {
+    @include transform(rotate($teeter-angle / 3 * -1));
+  }
+}
+
+@mixin teeter($duration: 1s, $delay: 0, $count: 1) {
+  @include animation(teeter $duration $delay $count);
+}

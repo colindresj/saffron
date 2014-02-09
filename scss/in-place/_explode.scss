@@ -8,6 +8,6 @@
   }
 }
 
-@mixin explode($duration: 0.5s) {
-  @include animation(explode $duration);
+@mixin explode($duration: 0.5s, $delay: 0) {
+  @include animation(explode $duration $delay);
 }

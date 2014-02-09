@@ -1,12 +1,15 @@
 @include keyframes(float) {
-  0% {
+  0%, 50%, 100% {
     @include transform(translateY($float-bob-distance * -1));
   }
-  100% {
-    @include transform(translateY($float-bob-distance));
+  25% {
+    @include transform(translateY($float-bob-distance) rotate($float-bob-angle));
+  }
+  75% {
+    @include transform(translateY($float-bob-distance) rotate($float-bob-angle * -1));
   }
 }
 
-@mixin float() {
-  @include animation(float 1.5s ease-in-out infinite alternate);
+@mixin float($duration: 5s, $delay: 0, $count: infinite, $timing: ease-in-out) {
+  @include animation(float $count $duration $timing);
 }
