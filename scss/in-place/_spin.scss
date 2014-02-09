@@ -1,0 +1,12 @@
+@include keyframes(spin) {
+  0% {
+    @include transform(rotate(0deg));
+  }
+  100% {
+    @include transform(rotate(360deg));
+  }
+}
+
+@mixin spin($duration: 0.5s, $delay: 0, $count: 1, $timing: ease-in-out) {
+  @include animation(spin $count $duration $delay $timing);
+}
