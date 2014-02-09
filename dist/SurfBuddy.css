@@ -1051,7 +1051,84 @@
   }
 }
 
-.box:hover {
-  -webkit-animation: teeter 1s 0 1;
-          animation: teeter 1s 0 1;
+@-webkit-keyframes sway {
+  0%, 50%, 100% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+
+  25% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+}
+
+@-moz-keyframes sway {
+  0%, 50%, 100% {
+    -moz-transform: rotate(3deg);
+         transform: rotate(3deg);
+  }
+
+  25% {
+    -moz-transform: rotate(-3deg);
+         transform: rotate(-3deg);
+  }
+
+  75% {
+    -moz-transform: rotate(-3deg);
+         transform: rotate(-3deg);
+  }
+}
+
+@-o-keyframes sway {
+  0%, 50%, 100% {
+    -o-transform: rotate(3deg);
+       transform: rotate(3deg);
+  }
+
+  25% {
+    -o-transform: rotate(-3deg);
+       transform: rotate(-3deg);
+  }
+
+  75% {
+    -o-transform: rotate(-3deg);
+       transform: rotate(-3deg);
+  }
+}
+
+@keyframes sway {
+  0%, 50%, 100% {
+    -webkit-transform: rotate(3deg);
+       -moz-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+         -o-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+
+  25% {
+    -webkit-transform: rotate(-3deg);
+       -moz-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+         -o-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(-3deg);
+       -moz-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+         -o-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+}
+
+.box {
+  -webkit-animation: sway infinite 6.5s 0 ease-in-out;
+          animation: sway infinite 6.5s 0 ease-in-out;
 }
