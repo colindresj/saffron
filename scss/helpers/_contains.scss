@@ -1,0 +1,8 @@
+// Thanks to @lunelson and @zaus
+@function contains($list, $var) {
+  @if false == index($list, $var) {
+    @return false;
+  } @else {
+    @return true;
+  }
+}

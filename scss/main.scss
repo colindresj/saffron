@@ -1,7 +1,8 @@
 // Variables
 @import "variables";
 
-// Helper Mixins
+// Helper Mixins and Functions
+@import "helpers/contains";
 @import "helpers/prefix";
 @import "helpers/animation";
 @import "helpers/transition";

@@ -1,3 +1,7 @@
 @mixin transition ($properties...) {
-  @include prefix(transition, $properties, webkit spec);
+  @if contains($prefixes, "webkit") {
+    @include prefix(transition, $property, webkit spec);
+  } @else {
+    @include prefix(transition, $property, spec);
+  }
 }

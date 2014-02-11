@@ -1,3 +1,7 @@
 @mixin transform($property: none) {
-  @include prefix(transform, $property);
+  @if contains($prefixes, "webkit") {
+    @include prefix(transform, $property, webkit spec);
+  } @else {
+    @include prefix(transform, $property, spec);
+  }
 }
