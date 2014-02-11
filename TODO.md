@@ -1,6 +1,5 @@
 ####Bugs
 ---
-- show only webkit and spec prefixes on transition and transform
 - test on more browsers
 
 ####Entrances
