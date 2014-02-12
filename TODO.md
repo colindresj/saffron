@@ -34,7 +34,6 @@
 - stretchDown
 - stretchLeft
 - stretchRight
-- encircle
 
 ####Movement
 ---

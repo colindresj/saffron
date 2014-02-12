@@ -1486,8 +1486,3 @@
             transform: scale(1.1);
   }
 }
-
-.box {
-  -webkit-animation: bounce 1 1s 0s;
-          animation: bounce 1 1s 0s;
-}
