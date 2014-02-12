@@ -22,6 +22,8 @@
   }
 }
 
-@mixin teeter($duration: 1s, $delay: 0, $count: 1) {
+@mixin teeter($duration: 1s, $delay: 0s, $count: 1) {
+  // hack to fix jagged edges
+  outline: 1px solid transparent;
   @include animation(teeter $duration $delay $count);
 }

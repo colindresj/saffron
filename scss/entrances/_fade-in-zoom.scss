@@ -9,7 +9,7 @@
   }
 }
 
-@mixin fadeInZoom($duration: 1s, $delay: 0) {
+@mixin fadeInZoom($duration: 1s, $delay: 0s) {
   opacity: 1;
   @include animation(fadeInZoom $duration $delay);
 }

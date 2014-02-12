@@ -15,7 +15,7 @@
   }
 }
 
-@mixin fadeInZoomBig($duration: 1s, $delay: 0) {
+@mixin fadeInZoomBig($duration: 1s, $delay: 0s) {
   opacity: 1;
   @include animation(fadeInZoomBig $duration $delay);
 }

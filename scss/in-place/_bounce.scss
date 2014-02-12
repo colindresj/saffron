@@ -19,6 +19,6 @@
   }
 }
 
-@mixin bounce($duration: 1s, $delay: 0, $count: 1) {
+@mixin bounce($duration: 1s, $delay: 0s, $count: 1) {
   @include animation(bounce $count $duration $delay);
 }

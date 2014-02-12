@@ -1488,6 +1488,6 @@
 }
 
 .box {
-  -webkit-animation: explode .5s 0;
-          animation: explode .5s 0;
+  -webkit-animation: bounce 1 1s 0s;
+          animation: bounce 1 1s 0s;
 }

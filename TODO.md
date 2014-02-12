@@ -30,13 +30,11 @@
 - flip
 - sonar
 - shrink
-- expand
 - stretchUp
 - stretchDown
 - stretchLeft
 - stretchRight
 - encircle
-- color
 
 ####Movement
 ---
