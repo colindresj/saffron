@@ -1,4 +1,4 @@
-/*! SurfBuddy - v0.0.1 - 2014-02-11
+/*! SurfBuddy - v0.0.1 - 2014-02-17
 * Copyright (c) 2014 JC; Licensed MIT */
 
 @-webkit-keyframes fadeIn {
@@ -1485,4 +1485,9 @@
         -ms-transform: scale(1.1);
             transform: scale(1.1);
   }
+}
+
+.box:hover {
+  -webkit-animation: bounce 1 1s 0s;
+          animation: bounce 1 1s 0s;
 }
