@@ -1,0 +1,13 @@
+@include keyframes(fadeOutRight) {
+  0% {
+    opacity: 1;
+    @include transform(translateX($translateX-distance));
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@mixin fadeOutRight($duration: 1s, $delay: 0s, $fill-mode: forwards) {
+  @include animation(fadeOutRight $duration $delay $fill-mode);
+}

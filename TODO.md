@@ -4,24 +4,13 @@
 
 ####Entrances
 ---
-- fadeInLeft
-- fadeInRight
-- dropIn
-- riseIn
-- slideInLeft
-- slideInRight
 - flipIn
 - spinIn
+- floatDown
 - anvil
 
 ####Exits
 ---
-- fadeOutLeft
-- fadeOutRight
-- dropOut
-- riseOut
-- slideOutLeft
-- slideOutRight
 - flipOut
 - spinOut
 

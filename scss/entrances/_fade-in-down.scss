@@ -9,6 +9,5 @@
 }
 
 @mixin fadeInDown($duration: 1s, $delay: 0s, $fill-mode: forwards) {
-  opacity: 1;
   @include animation(fadeInDown $duration $delay $fill-mode);
 }

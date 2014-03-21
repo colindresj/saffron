@@ -10,6 +10,5 @@
 }
 
 @mixin fadeInZoom($duration: 1s, $delay: 0s, $fill-mode: forwards) {
-  opacity: 1;
   @include animation(fadeInZoom $duration $delay $fill-mode);
 }

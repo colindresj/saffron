@@ -1,0 +1,9 @@
+@include keyframes(slideInRight) {
+  0% {
+    @include transform(translateX($translateX-distance));
+  }
+}
+
+@mixin slideInRight($duration: 1s, $delay: 0s, $fill-mode: forwards) {
+  @include animation(slideInRight $duration $delay $fill-mode);
+}

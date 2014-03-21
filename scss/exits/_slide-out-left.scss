@@ -1,0 +1,10 @@
+@include keyframes(slideOutLeft) {
+  100% {
+    opacity: 0;
+    @include transform(translateX($translateX-distance * -1));
+  }
+}
+
+@mixin slideOutLeft($duration: 1s, $delay: 0s, $fill-mode: forwards) {
+  @include animation(slideOutLeft $duration $delay $fill-mode);
+}

@@ -1,0 +1,13 @@
+@include keyframes(riseOut) {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    @include transform(translateY($drop-rise-distance * -1));
+  }
+}
+
+@mixin riseOut($duration: 0.5s, $delay: 0s, $fill-mode: forwards) {
+  @include animation(riseOut $duration $delay $fill-mode);
+}

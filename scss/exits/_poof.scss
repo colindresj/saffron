@@ -1,0 +1,18 @@
+@include keyframes(poof) {
+  0% {
+    opacity: 1;
+    @include transform(scale(0));
+    @include transform(scale(1));
+    -webkit-filter: blur(0px);
+  }
+
+  100% {
+    opacity: 0;
+    @include transform(scale(2));
+    -webkit-filter: blur(40px);
+  }
+}
+
+@mixin poof($duration: 0.75s, $delay: 0s, $fill-mode: forwards) {
+  @include animation(poof $duration $delay $fill-mode);
+}
