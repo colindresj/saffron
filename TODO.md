@@ -2,18 +2,6 @@
 ---
 - test on more browsers
 
-####Entrances
----
-- flipIn
-- spinIn
-- floatDown
-- anvil
-
-####Exits
----
-- flipOut
-- spinOut
-
 ####In Place
 ---
 - flip
@@ -23,10 +11,8 @@
 - stretchDown
 - stretchLeft
 - stretchRight
+- doorOpen
 
-####Movement
+####Other
 ---
-- moveUp
-- moveDown
-- moveLeft
-- moveRight
+- consolidate similar animations

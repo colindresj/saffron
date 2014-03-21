@@ -22,6 +22,7 @@
 @import "entrances/drop-in";
 @import "entrances/rise-in";
 @import "entrances/pop-in";
+@import "entrances/turn-in";
 
 // Exits
 @import "exits/fade-out";
@@ -37,6 +38,7 @@
 @import "exits/drop-out";
 @import "exits/rise-out";
 @import "exits/poof";
+@import "exits/turn-out";
 
 // In Place
 @import "in-place/float";
