@@ -1,26 +1,23 @@
-@mixin backgroundColorHover($from, $to, $duration: 1.5s, $delay: 0s) {
+@mixin backgroundColorHover($from, $to, $duration: 1.5s, $delay: 0s, $fill-mode: none) {
   background-color: $from !important;
-  @include transition(background-color $duration $delay);
+  @include transition(background-color $duration $delay $fill-mode);
   &:hover {
     background-color: $to !important;
-    @include transition(background-color $duration $delay);
   }
 }
 
-@mixin borderColorHover($from, $to, $duration: 1.5s, $delay: 0s) {
+@mixin borderColorHover($from, $to, $duration: 1.5s, $delay: 0s, $fill-mode: none) {
   border-color: $from !important;
-  @include transition(border-color $duration $delay);
+  @include transition(border-color $duration $delay $fill-mode);
   &:hover {
     border-color: $to !important;
-    @include transition(border-color $duration $delay);
   }
 }
 
-@mixin colorHover($from, $to, $duration: 1.5s, $delay: 0s) {
+@mixin colorHover($from, $to, $duration: 1.5s, $delay: 0s, $fill-mode: none) {
   color: $from !important;
-  @include transition(color $duration $delay);
+  @include transition(color $duration $delay $fill-mode);
   &:hover {
     color: $to !important;
-    @include transition(color $duration $delay);
   }
 }

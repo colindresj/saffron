@@ -10,8 +10,8 @@
   }
 }
 
-@mixin float($duration: 5s, $delay: 0ss, $count: infinite, $timing: ease-in-out) {
+@mixin float($duration: 5s, $delay: 0s, $fill-mode: none, $count: infinite, $timing: ease-in-out) {
   // hack to fix jagged edges
   outline: 1px solid transparent;
-  @include animation(float $count $duration $delay $timing);
+  @include animation(float $count $duration $delay $fill-mode $timing);
 }

@@ -35,8 +35,8 @@
 
 }
 
-@mixin quiver($duration: 0.75s, $delay: 0s, $count: infinite) {
+@mixin quiver($duration: 0.75s, $delay: 0s, $fill-mode: none, $count: infinite) {
   // hack to fix jagged edges
   outline: 1px solid transparent;
-  @include animation(quiver $duration $delay $count);
+  @include animation(quiver $duration $delay $fill-mode $count);
 }

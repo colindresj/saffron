@@ -7,6 +7,6 @@
   }
 }
 
-@mixin spin($duration: 0.5s, $delay: 0s, $count: 1, $timing: ease-in-out) {
-  @include animation(spin $count $duration $delay $timing);
+@mixin spin($duration: 0.5s, $delay: 0s, $fill-mode: none, $count: 1, $timing: ease-in-out) {
+  @include animation(spin $count $duration $delay $fill-mode $timing);
 }

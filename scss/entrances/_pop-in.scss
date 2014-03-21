@@ -9,6 +9,6 @@
   }
 }
 
-@mixin popIn($duration: 0.5s, $delay: 0s) {
-  @include animation(popIn $duration $delay);
+@mixin popIn($duration: 0.5s, $delay: 0s, $fill-mode: forwards) {
+  @include animation(popIn $duration $delay $fill-mode);
 }

@@ -9,6 +9,6 @@
   }
 }
 
-@mixin pulsate($duration: 1.5s, $delay: 0s, $count: 3) {
-  @include animation(pulsate $count $duration $delay);
+@mixin pulsate($duration: 1.5s, $delay: 0s, $fill-mode: none, $count: 3) {
+  @include animation(pulsate $count $duration $delay $fill-mode);
 }

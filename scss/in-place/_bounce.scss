@@ -19,6 +19,6 @@
   }
 }
 
-@mixin bounce($duration: 1s, $delay: 0s, $count: 1) {
-  @include animation(bounce $count $duration $delay);
+@mixin bounce($duration: 1s, $delay: 0s, $count: 1, $fill-mode: none) {
+  @include animation(bounce $count $duration $delay $fill-mode);
 }

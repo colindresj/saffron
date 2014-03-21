@@ -8,7 +8,7 @@
   }
 }
 
-@mixin fadeOutUp($duration: 1s, $delay: 0s) {
+@mixin fadeOutUp($duration: 1s, $delay: 0s, $fill-mode: forwards) {
   opacity: 1;
-  @include animation(fadeOutUp $duration $delay);
+  @include animation(fadeOutUp $duration $delay $fill-mode);
 }
