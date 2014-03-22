@@ -8,3 +8,14 @@
 @mixin slideOutLeft($duration: 1s, $delay: 0s, $fill-mode: forwards) {
   @include animation(slideOutLeft $duration $delay $fill-mode);
 }
+
+@include keyframes(slideOutRight) {
+  100% {
+    opacity: 0;
+    @include transform(translateX($translateX-distance));
+  }
+}
+
+@mixin slideOutRight($duration: 1s, $delay: 0s, $fill-mode: forwards) {
+  @include animation(slideOutRight $duration $delay $fill-mode);
+}

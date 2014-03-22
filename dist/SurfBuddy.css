@@ -2646,9 +2646,7 @@
 }
 
 .box {
-  -webkit-transform-origin: 0 100%;
-     -moz-transform-origin: 0 100%;
-          transform-origin: 0 100%;
-  -webkit-animation: stretch 1 1.75s 0s both ease-out;
-          animation: stretch 1 1.75s 0s both ease-out;
+  outline: 1px solid transparent;
+  -webkit-animation: teeter 1s 0s none 1;
+          animation: teeter 1s 0s none 1;
 }

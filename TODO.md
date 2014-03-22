@@ -1,5 +1,7 @@
 ####Other
 ---
 - test on more browsers
-- consolidate similar animations
-- rename (Norman?)
+- test on older versions of sass
+- rename
+- package as gem
+- improve distribution
