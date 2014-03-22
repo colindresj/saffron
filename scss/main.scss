@@ -23,6 +23,8 @@
 @import "entrances/rise-in";
 @import "entrances/pop-in";
 @import "entrances/turn-in";
+@import "entrances/stretch";
+@import "entrances/newspaper";
 
 // Exits
 @import "exits/fade-out";
@@ -39,10 +41,12 @@
 @import "exits/rise-out";
 @import "exits/poof";
 @import "exits/turn-out";
+@import "exits/compress";
 
 // In Place
 @import "in-place/float";
 @import "in-place/shake";
+@import "in-place/expand";
 @import "in-place/teeter";
 @import "in-place/quiver";
 @import "in-place/sway";

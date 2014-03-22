@@ -1,18 +1,6 @@
-####Bugs
----
-- test on more browsers
-
-####In Place
----
-- flip
-- sonar
-- shrink
-- stretchUp
-- stretchDown
-- stretchLeft
-- stretchRight
-- doorOpen
-
 ####Other
 ---
+- Use variables for newer animations
+- test on more browsers
 - consolidate similar animations
+- rename (Norman?)
