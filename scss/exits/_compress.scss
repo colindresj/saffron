@@ -3,10 +3,10 @@
     @include transform(scaleY(1));
   }
   30% {
-    @include transform(scaleY(1.05));
+    @include transform(scaleY($stretch-compress-exageration));
   }
   50% {
-    @include transform(scaleY(0.98));
+    @include transform(scaleY($stretch-compress-exageration - ($stretch-compress-exageration * .075)));
   }
   100% {
     @include transform(scaleY(0));

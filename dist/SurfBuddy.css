@@ -762,28 +762,28 @@
   }
 
   40% {
-    -webkit-transform: scaleY(1.1);
-            transform: scaleY(1.1);
+    -webkit-transform: scaleY(1.05);
+            transform: scaleY(1.05);
   }
 
   60% {
-    -webkit-transform: scaleY(.98);
-            transform: scaleY(.98);
+    -webkit-transform: scaleY(.97125);
+            transform: scaleY(.97125);
   }
 
   80% {
-    -webkit-transform: scaleY(1.1);
-            transform: scaleY(1.1);
+    -webkit-transform: scaleY(1.05);
+            transform: scaleY(1.05);
   }
 
   100% {
-    -webkit-transform: scaleY(.98);
-            transform: scaleY(.98);
+    -webkit-transform: scaleY(.97125);
+            transform: scaleY(.97125);
   }
 
   80% {
-    -webkit-transform: scaleY(1.025);
-            transform: scaleY(1.025);
+    -webkit-transform: scaleY(1.02375);
+            transform: scaleY(1.02375);
   }
 
   100% {
@@ -798,23 +798,23 @@
   }
 
   40% {
-    transform: scaleY(1.1);
+    transform: scaleY(1.05);
   }
 
   60% {
-    transform: scaleY(.98);
+    transform: scaleY(.97125);
   }
 
   80% {
-    transform: scaleY(1.1);
+    transform: scaleY(1.05);
   }
 
   100% {
-    transform: scaleY(.98);
+    transform: scaleY(.97125);
   }
 
   80% {
-    transform: scaleY(1.025);
+    transform: scaleY(1.02375);
   }
 
   100% {
@@ -828,23 +828,23 @@
   }
 
   40% {
-    transform: scaleY(1.1);
+    transform: scaleY(1.05);
   }
 
   60% {
-    transform: scaleY(.98);
+    transform: scaleY(.97125);
   }
 
   80% {
-    transform: scaleY(1.1);
+    transform: scaleY(1.05);
   }
 
   100% {
-    transform: scaleY(.98);
+    transform: scaleY(.97125);
   }
 
   80% {
-    transform: scaleY(1.025);
+    transform: scaleY(1.02375);
   }
 
   100% {
@@ -860,33 +860,33 @@
   }
 
   40% {
-    -webkit-transform: scaleY(1.1);
-        -ms-transform: scaleY(1.1);
-            transform: scaleY(1.1);
+    -webkit-transform: scaleY(1.05);
+        -ms-transform: scaleY(1.05);
+            transform: scaleY(1.05);
   }
 
   60% {
-    -webkit-transform: scaleY(.98);
-        -ms-transform: scaleY(.98);
-            transform: scaleY(.98);
+    -webkit-transform: scaleY(.97125);
+        -ms-transform: scaleY(.97125);
+            transform: scaleY(.97125);
   }
 
   80% {
-    -webkit-transform: scaleY(1.1);
-        -ms-transform: scaleY(1.1);
-            transform: scaleY(1.1);
+    -webkit-transform: scaleY(1.05);
+        -ms-transform: scaleY(1.05);
+            transform: scaleY(1.05);
   }
 
   100% {
-    -webkit-transform: scaleY(.98);
-        -ms-transform: scaleY(.98);
-            transform: scaleY(.98);
+    -webkit-transform: scaleY(.97125);
+        -ms-transform: scaleY(.97125);
+            transform: scaleY(.97125);
   }
 
   80% {
-    -webkit-transform: scaleY(1.025);
-        -ms-transform: scaleY(1.025);
-            transform: scaleY(1.025);
+    -webkit-transform: scaleY(1.02375);
+        -ms-transform: scaleY(1.02375);
+            transform: scaleY(1.02375);
   }
 
   100% {
@@ -1741,8 +1741,8 @@
   }
 
   50% {
-    -webkit-transform: scaleY(.98);
-            transform: scaleY(.98);
+    -webkit-transform: scaleY(.97125);
+            transform: scaleY(.97125);
   }
 
   100% {
@@ -1761,7 +1761,7 @@
   }
 
   50% {
-    transform: scaleY(.98);
+    transform: scaleY(.97125);
   }
 
   100% {
@@ -1779,7 +1779,7 @@
   }
 
   50% {
-    transform: scaleY(.98);
+    transform: scaleY(.97125);
   }
 
   100% {
@@ -1801,9 +1801,9 @@
   }
 
   50% {
-    -webkit-transform: scaleY(.98);
-        -ms-transform: scaleY(.98);
-            transform: scaleY(.98);
+    -webkit-transform: scaleY(.97125);
+        -ms-transform: scaleY(.97125);
+            transform: scaleY(.97125);
   }
 
   100% {
@@ -2646,10 +2646,9 @@
 }
 
 .box {
-  padding-right: 0;
-  -webkit-transition: padding-right .5s cubic-bezier(.68, -.55, .275, 1.465);
-          transition: padding-right .5s cubic-bezier(.68, -.55, .275, 1.465);
-}
-.box:hover {
-  padding-right: 50px;
+  -webkit-transform-origin: 0 100%;
+     -moz-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  -webkit-animation: stretch 1 1.75s 0s both ease-out;
+          animation: stretch 1 1.75s 0s both ease-out;
 }

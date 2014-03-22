@@ -3,19 +3,19 @@
     @include transform(scaleY(0));
   }
   40% {
-    @include transform(scaleY(1.1));
+    @include transform(scaleY($stretch-compress-exageration));
   }
   60% {
-    @include transform(scaleY(0.98));
+    @include transform(scaleY($stretch-compress-exageration - ($stretch-compress-exageration * .075)));
   }
   80% {
-    @include transform(scaleY(1.1));
+    @include transform(scaleY($stretch-compress-exageration));
   }
   100% {
-    @include transform(scaleY(0.98));
+    @include transform(scaleY($stretch-compress-exageration - ($stretch-compress-exageration * .075)));
   }
   80% {
-    @include transform(scaleY(1.025));
+    @include transform(scaleY($stretch-compress-exageration - ($stretch-compress-exageration * .025)));
   }
   100% {
     @include transform(scaleY(1));
