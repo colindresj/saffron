@@ -1,7 +1,7 @@
 {
-  "name": "SurfBuddy",
-  "description": "A library of Sass mixins for animation.",
-  "version": "0.0.1",
+  "name": "saffron",
+  "description": "A simple sass mixin library for animations and transitions.",
+  "version": "0.1.0",
   "keywords": [
     "sass",
     "scss",
@@ -9,7 +9,7 @@
   ],
   "author": {
     "name": "JC",
-    "email": "jorge.e.colindres@gmail.com",
+    "email": "j@colindres.com",
     "url": "http://colindres.me"
   },
   "licenses": [
