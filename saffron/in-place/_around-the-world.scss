@@ -8,8 +8,11 @@
   50% {
     @include transform(translateX(0%) translateY(100%));
   }
-  100% {
+  75% {
     @include transform(translateX(0%) translateY(0%));
+  }
+  100% {
+    @include transform(translateX(100%) translateY(0%));
   }
 }
 
