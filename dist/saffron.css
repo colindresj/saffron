@@ -1,4 +1,4 @@
-/*! saffron - v0.1.0 - 2014-03-22
+/*! saffron - v0.1.0 - 2014-03-23
 * Copyright (c) 2014 JC; Licensed MIT */
 
 @-webkit-keyframes fadeIn {
@@ -2647,51 +2647,90 @@
 
 @-webkit-keyframes aroundTheWorld {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: translateX(100%) translateY(0%);
+            transform: translateX(100%) translateY(0%);
+  }
+
+  25% {
+    -webkit-transform: translateX(100%) translateY(100%);
+            transform: translateX(100%) translateY(100%);
+  }
+
+  50% {
+    -webkit-transform: translateX(0%) translateY(100%);
+            transform: translateX(0%) translateY(100%);
   }
 
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: translateX(0%) translateY(0%);
+            transform: translateX(0%) translateY(0%);
   }
 }
 
 @-moz-keyframes aroundTheWorld {
   0% {
-    transform: rotate(0deg);
+    transform: translateX(100%) translateY(0%);
+  }
+
+  25% {
+    transform: translateX(100%) translateY(100%);
+  }
+
+  50% {
+    transform: translateX(0%) translateY(100%);
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: translateX(0%) translateY(0%);
   }
 }
 
 @-o-keyframes aroundTheWorld {
   0% {
-    transform: rotate(0deg);
+    transform: translateX(100%) translateY(0%);
+  }
+
+  25% {
+    transform: translateX(100%) translateY(100%);
+  }
+
+  50% {
+    transform: translateX(0%) translateY(100%);
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: translateX(0%) translateY(0%);
   }
 }
 
 @keyframes aroundTheWorld {
   0% {
-    -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: translateX(100%) translateY(0%);
+        -ms-transform: translateX(100%) translateY(0%);
+            transform: translateX(100%) translateY(0%);
+  }
+
+  25% {
+    -webkit-transform: translateX(100%) translateY(100%);
+        -ms-transform: translateX(100%) translateY(100%);
+            transform: translateX(100%) translateY(100%);
+  }
+
+  50% {
+    -webkit-transform: translateX(0%) translateY(100%);
+        -ms-transform: translateX(0%) translateY(100%);
+            transform: translateX(0%) translateY(100%);
   }
 
   100% {
-    -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: translateX(0%) translateY(0%);
+        -ms-transform: translateX(0%) translateY(0%);
+            transform: translateX(0%) translateY(0%);
   }
 }
 
 .box {
+  position: absolute;
   width: 100px;
   height: 100px;
   background: red;
