@@ -1,3 +1,6 @@
 .box {
-  @include teeter();
+  @include aroundTheWorld();
+  height: 100px;
+  width: 100px;
+  background: red;
 }
