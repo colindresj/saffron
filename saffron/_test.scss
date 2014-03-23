@@ -1,5 +1,5 @@
 .box {
-  @include aroundTheWorld($count: infinite, $duration: 2.5s);
+  @include aroundTheWorld();
   height: 100px;
   width: 100px;
   background: red;
