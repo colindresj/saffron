@@ -2645,8 +2645,113 @@
   }
 }
 
+@-webkit-keyframes aroundTheWorld {
+  0% {
+    -webkit-transform: translateX(100%) translateY(0%);
+            transform: translateX(100%) translateY(0%);
+  }
+
+  25% {
+    -webkit-transform: translateX(100%) translateY(100%);
+            transform: translateX(100%) translateY(100%);
+  }
+
+  50% {
+    -webkit-transform: translateX(0%) translateY(100%);
+            transform: translateX(0%) translateY(100%);
+  }
+
+  75% {
+    -webkit-transform: translateX(0%) translateY(0%);
+            transform: translateX(0%) translateY(0%);
+  }
+
+  100% {
+    -webkit-transform: translateX(100%) translateY(0%);
+            transform: translateX(100%) translateY(0%);
+  }
+}
+
+@-moz-keyframes aroundTheWorld {
+  0% {
+    transform: translateX(100%) translateY(0%);
+  }
+
+  25% {
+    transform: translateX(100%) translateY(100%);
+  }
+
+  50% {
+    transform: translateX(0%) translateY(100%);
+  }
+
+  75% {
+    transform: translateX(0%) translateY(0%);
+  }
+
+  100% {
+    transform: translateX(100%) translateY(0%);
+  }
+}
+
+@-o-keyframes aroundTheWorld {
+  0% {
+    transform: translateX(100%) translateY(0%);
+  }
+
+  25% {
+    transform: translateX(100%) translateY(100%);
+  }
+
+  50% {
+    transform: translateX(0%) translateY(100%);
+  }
+
+  75% {
+    transform: translateX(0%) translateY(0%);
+  }
+
+  100% {
+    transform: translateX(100%) translateY(0%);
+  }
+}
+
+@keyframes aroundTheWorld {
+  0% {
+    -webkit-transform: translateX(100%) translateY(0%);
+        -ms-transform: translateX(100%) translateY(0%);
+            transform: translateX(100%) translateY(0%);
+  }
+
+  25% {
+    -webkit-transform: translateX(100%) translateY(100%);
+        -ms-transform: translateX(100%) translateY(100%);
+            transform: translateX(100%) translateY(100%);
+  }
+
+  50% {
+    -webkit-transform: translateX(0%) translateY(100%);
+        -ms-transform: translateX(0%) translateY(100%);
+            transform: translateX(0%) translateY(100%);
+  }
+
+  75% {
+    -webkit-transform: translateX(0%) translateY(0%);
+        -ms-transform: translateX(0%) translateY(0%);
+            transform: translateX(0%) translateY(0%);
+  }
+
+  100% {
+    -webkit-transform: translateX(100%) translateY(0%);
+        -ms-transform: translateX(100%) translateY(0%);
+            transform: translateX(100%) translateY(0%);
+  }
+}
+
 .box {
-  outline: 1px solid transparent;
-  -webkit-animation: teeter 1s 0s none 1;
-          animation: teeter 1s 0s none 1;
+  width: 100px;
+  height: 100px;
+  background: red;
+  -webkit-animation: aroundTheWorld infinite 3s 0s none ease-in-out;
+          animation: aroundTheWorld infinite 3s 0s none ease-in-out;
 }
