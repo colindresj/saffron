@@ -16,6 +16,6 @@
   }
 }
 
-@mixin aroundTheWorld($duration: 2.5s, $delay: 0s, $fill-mode: none, $count: infinite, $timing: ease-in-out) {
+@mixin aroundTheWorld($duration: 3s, $delay: 0s, $fill-mode: none, $count: infinite, $timing: ease-in-out) {
   @include animation(aroundTheWorld $count $duration $delay $fill-mode $timing);
 }

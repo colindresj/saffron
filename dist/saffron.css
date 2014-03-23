@@ -2752,6 +2752,6 @@
   width: 100px;
   height: 100px;
   background: red;
-  -webkit-animation: aroundTheWorld infinite 2.5s 0s none ease-in-out;
-          animation: aroundTheWorld infinite 2.5s 0s none ease-in-out;
+  -webkit-animation: aroundTheWorld infinite 3s 0s none ease-in-out;
+          animation: aroundTheWorld infinite 3s 0s none ease-in-out;
 }
