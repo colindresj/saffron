@@ -2692,9 +2692,9 @@
 }
 
 .box {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   background: red;
-  -webkit-animation: bounce 1 .5s 0s none;
-          animation: bounce 1 .5s 0s none;
+  -webkit-animation: aroundTheWorld infinite 1.5s 0s none ease-in-out;
+          animation: aroundTheWorld infinite 1.5s 0s none ease-in-out;
 }

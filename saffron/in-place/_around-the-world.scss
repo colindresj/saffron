@@ -2,6 +2,12 @@
   0% {
     @include transform(rotate(0deg));
   }
+  25% {
+    @include transform(rotate(90deg));
+  }
+  50% {
+    @include transform(rotate(270deg));
+  }
   100% {
     @include transform(rotate(360deg));
   }

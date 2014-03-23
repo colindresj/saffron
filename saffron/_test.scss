@@ -1,6 +1,6 @@
 .box {
-  @include bounce($duration: 0.5s);
-  height: 50px;
-  width: 50px;
+  @include aroundTheWorld($count: infinite, $duration: 1.5s);
+  height: 100px;
+  width: 100px;
   background: red;
 }
