@@ -1,0 +1,12 @@
+@include keyframes(load) {
+  0% {
+    @include transform(rotate(0deg));
+  }
+  100% {
+    @include transform(rotate(360deg));
+  }
+}
+
+@mixin load($duration: 3s, $delay: 0s, $fill-mode: none, $count: infinite, $timing: ease-in-out) {
+  @include animation(load $count $duration $delay $fill-mode $timing);
+}
