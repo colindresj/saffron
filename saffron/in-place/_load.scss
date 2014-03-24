@@ -1,12 +1,23 @@
 @include keyframes(load) {
+  // include in regular css:
+  // height: 100px;
+  // width: 100px;
+  // background: red;
+  // border-radius: 50%;
+  // position: absolute;
+  // optional for better display:
+  // top: 50%;
+  // left: 50%;
+  // margin: -50px;
   0% {
-    @include transform(rotate(0deg));
+    //second rotate is to keep the element from flipping the content
+    @include transform(rotate(0deg) translate(-100px) rotate(0deg));
   }
   100% {
-    @include transform(rotate(360deg));
+    @include transform(rotate(360deg) translate(-100px) rotate(-360deg));
   }
 }
 
-@mixin load($duration: 3s, $delay: 0s, $fill-mode: none, $count: infinite, $timing: ease-in-out) {
+@mixin load($duration: 2s, $delay: 0s, $fill-mode: none, $count: infinite, $timing: ease-in-out) {
   @include animation(load $count $duration $delay $fill-mode $timing);
 }
