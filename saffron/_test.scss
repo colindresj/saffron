@@ -3,4 +3,10 @@
   height: 100px;
   width: 100px;
   background: red;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px;
 }
