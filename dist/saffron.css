@@ -2871,6 +2871,56 @@
   }
 }
 
+@-webkit-keyframes ping {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-moz-keyframes ping {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@-o-keyframes ping {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes ping {
+  0% {
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 @-webkit-keyframes squareDance {
   0%, 100% {
     -webkit-transform: translate3d(100%, 0, 0);
@@ -3010,6 +3060,6 @@
   margin: -50px;
   background: red;
   border-radius: 50%;
-  -webkit-animation: sunrise 1 4s 0s both ease-in-out;
-          animation: sunrise 1 4s 0s both ease-in-out;
+  -webkit-animation: ping infinite 1.5s 0s none ease-in-out;
+          animation: ping infinite 1.5s 0s none ease-in-out;
 }
