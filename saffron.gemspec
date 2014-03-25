@@ -23,6 +23,7 @@ Just include a mixin in your CSS declaration, then set any configuration using v
   spec.require_paths = ["lib"]
 
   spec.add_dependency "sass", "~> 3.3"
+  spec.add_dependency "thor"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
