@@ -1,6 +1,6 @@
 @include keyframes(bounce) {
   0%, 85%, 100% {
-    @include transform(translateY(0) scaleY(1) scaleX(1));
+    @include transform(translateY(0) scaleY(1) scaleX(1) translateZ(0));
   }
   25% {
     @include transform(translateY(-1.35rem) scaleY(1.02) scaleX(0.98));

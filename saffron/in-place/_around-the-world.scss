@@ -1,9 +1,9 @@
 @include keyframes(aroundTheWorld) {
   0% {
-    @include transform(rotate(0deg) translate($distance-from-origin) rotate(0deg));
+    @include transform(rotate(0deg) translate3d($distance-from-origin * -1, $distance-from-origin * -1, 0) rotate(0deg));
   }
   100% {
-    @include transform(rotate(360deg) translate($distance-from-origin) rotate(-360deg));
+    @include transform(rotate(360deg) translate3d($distance-from-origin * -1, $distance-from-origin * -1, 0) rotate(-360deg));
   }
 }
 

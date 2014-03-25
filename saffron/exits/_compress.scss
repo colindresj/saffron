@@ -1,6 +1,6 @@
 @include keyframes(compress) {
   0% {
-    @include transform(scaleY(1));
+    @include transform(scaleY(1) translateZ(0));
   }
   30% {
     @include transform(scaleY($stretch-compress-exageration));

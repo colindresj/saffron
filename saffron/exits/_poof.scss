@@ -1,8 +1,7 @@
 @include keyframes(poof) {
   0% {
     opacity: 1;
-    @include transform(scale(0));
-    @include transform(scale(1));
+    @include transform(scale(1) translateZ(0));
     -webkit-filter: blur(0px);
   }
 

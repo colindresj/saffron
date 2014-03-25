@@ -7,6 +7,6 @@
   }
 }
 
-@mixin sunrise($duration: 4s, $delay: 0s, $fill-mode: none, $count: 1, $timing: ease-in-out) {
+@mixin sunrise($duration: 4s, $delay: 0s, $fill-mode: both, $count: 1, $timing: ease-in-out) {
   @include animation(sunrise $count $duration $delay $fill-mode $timing);
 }

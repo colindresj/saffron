@@ -1,7 +1,7 @@
 @include keyframes(fadeInZoom) {
   0% {
     opacity: 0;
-    @include transform(scale(0));
+    @include transform(scale(0) translateZ(0));
   }
   100% {
     opacity: 1;

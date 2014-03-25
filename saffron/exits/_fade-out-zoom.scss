@@ -1,7 +1,7 @@
 @include keyframes(fadeOutZoom) {
   0% {
     opacity: 1;
-    @include transform(scale(1));
+    @include transform(translateZ(0));
   }
   100% {
     opacity: 0;
