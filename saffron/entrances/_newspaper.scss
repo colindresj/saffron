@@ -1,7 +1,7 @@
 @include keyframes(newspaper) {
   0% {
     opacity: 0;
-    @include transform(rotate(720deg) scale(0.33));
+    @include transform(rotate(720deg) scale(0.33) translateZ(0));
   }
   100% {
     opacity: 1;

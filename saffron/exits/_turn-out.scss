@@ -1,7 +1,7 @@
-@include keyframes(turnDownOut) {
+@include keyframes(turnOutDown) {
   0% {
     opacity: 1;
-    @include transform(perspective(800px) rotateX(0deg) translateZ(0px));
+    @include transform(perspective(800px) rotateX(0deg) translateZ(0));
     @include prefix(backface-visibility, hidden, webkit spec);
   }
 
@@ -11,14 +11,14 @@
   }
 }
 
-@mixin turnDownOut($duration: 1s, $delay: 0s, $fill-mode: forwards) {
-  @include animation(turnDownOut $duration $delay $fill-mode);
+@mixin turnOutDown($duration: 1s, $delay: 0s, $fill-mode: forwards) {
+  @include animation(turnOutDown $duration $delay $fill-mode);
 }
 
-@include keyframes(turnUpOut) {
+@include keyframes(turnOutUp) {
   0% {
     opacity: 1;
-    @include transform(perspective(800px) rotateX(0deg) translateZ(0px));
+    @include transform(perspective(800px) rotateX(0deg) translateZ(0));
     @include prefix(backface-visibility, hidden, webkit spec);
   }
 
@@ -28,6 +28,6 @@
   }
 }
 
-@mixin turnUpOut($duration: 1s, $delay: 0s, $fill-mode: forwards) {
-  @include animation(turnUpOut $duration $delay $fill-mode);
+@mixin turnOutUp($duration: 1s, $delay: 0s, $fill-mode: forwards) {
+  @include animation(turnOutUp $duration $delay $fill-mode);
 }

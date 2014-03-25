@@ -5,7 +5,7 @@
   }
   100% {
     opacity: 1;
-    @include transform(perspective(800px) rotateX(0deg) translateZ(0px));
+    @include transform(perspective(800px) rotateX(0deg) translateZ(0));
     @include prefix(backface-visibility, hidden, webkit moz spec);
   }
 }
@@ -21,7 +21,7 @@
   }
   100% {
     opacity: 1;
-    @include transform(perspective(800px) rotateX(0deg) translateZ(0px));
+    @include transform(perspective(800px) rotateX(0deg) translateZ(0));
     @include prefix(backface-visibility, hidden, webkit moz spec);
   }
 }

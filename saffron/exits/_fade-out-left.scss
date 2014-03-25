@@ -1,10 +1,10 @@
 @include keyframes(fadeOutLeft) {
   0% {
     opacity: 1;
-    @include transform(translateX($translateX-distance * -1));
   }
   100% {
     opacity: 0;
+    @include transform(translateX($translateX-distance * -1) translateZ(0));
   }
 }
 

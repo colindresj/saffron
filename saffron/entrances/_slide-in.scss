@@ -1,6 +1,14 @@
 @include keyframes(slideInLeft) {
   0% {
-    @include transform(translateX($translateX-distance * -1));
+    opacity: 0;
+    @include transform(translateX($translateX-distance * -10) translateZ(0));
+  }
+  65% {
+    opacity: 1;
+    @include transform(translateX($translateX-distance));
+  }
+  100% {
+    @include transform(translateX(0));
   }
 }
 
@@ -10,7 +18,15 @@
 
 @include keyframes(slideInRight) {
   0% {
-    @include transform(translateX($translateX-distance));
+    opacity: 0;
+    @include transform(translateX($translateX-distance * 10) translateZ(0));
+  }
+  65% {
+    opacity: 1;
+    @include transform(translateX($translateX-distance * -1));
+  }
+  100% {
+    @include transform(translateX(0));
   }
 }
 

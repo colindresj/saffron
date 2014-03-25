@@ -8,6 +8,6 @@
   }
 }
 
-@mixin ping($duration: 1s, $delay: 0s, $fill-mode: none, $count: infinite, $timing: ease-in-out) {
+@mixin ping($duration: 1.5s, $delay: 0s, $fill-mode: none, $count: infinite, $timing: ease-in-out) {
   @include animation(ping $count $duration $delay $fill-mode $timing);
 }
