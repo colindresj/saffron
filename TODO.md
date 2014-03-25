@@ -1,5 +1,6 @@
 ####Other
 ---
+- better sass error handling
 - package as gem
 - add example task to grunt
 - build up docs
