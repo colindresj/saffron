@@ -1,9 +1,9 @@
 .box {
-  @include aroundTheWorld();
+  @include sunrise();
   height: 100px;
   width: 100px;
   background: red;
-  border-radius: 50%;
+  // border-radius: 50%;
 
   position: absolute;
   top: 50%;

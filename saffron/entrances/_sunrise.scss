@@ -1,0 +1,12 @@
+@include keyframes(sunrise) {
+  0% {
+    @include transform(rotate(0deg) translate($distance-from-origin) rotate(0deg));
+  }
+  100% {
+    @include transform(rotate(360deg) translate($distance-from-origin) rotate(-360deg));
+  }
+}
+
+@mixin sunrise($duration: 2s, $delay: 0s, $fill-mode: none, $count: infinite, $timing: ease-in-out) {
+  @include animation(sunrise $count $duration $delay $fill-mode $timing);
+}
