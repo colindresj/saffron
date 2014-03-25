@@ -1,4 +1,4 @@
-/*! saffron - v0.1.0 - 2014-03-24
+/*! saffron - v0.1.0 - 2014-03-25
 * Copyright (c) 2014 JC; Licensed MIT */
 
 @-webkit-keyframes fadeIn {
@@ -2955,14 +2955,61 @@
   }
 }
 
-.box {
-  -webkit-animation: aroundTheWorld infinite 2s 0s none ease-in-out;
-          animation: aroundTheWorld infinite 2s 0s none ease-in-out;
+@-webkit-keyframes sunrise {
+  0% {
+    -webkit-transform: rotate(0deg) translate(-15em) rotate(0deg);
+            transform: rotate(0deg) translate(-15em) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg) translate(-15em) rotate(-180deg);
+            transform: rotate(180deg) translate(-15em) rotate(-180deg);
+  }
 }
 
-.start {
-  width: 10px;
-  height: 10px;
-  margin: 0 auto 0;
-  background: black;
+@-moz-keyframes sunrise {
+  0% {
+    transform: rotate(0deg) translate(-15em) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg) translate(-15em) rotate(-180deg);
+  }
+}
+
+@-o-keyframes sunrise {
+  0% {
+    transform: rotate(0deg) translate(-15em) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg) translate(-15em) rotate(-180deg);
+  }
+}
+
+@keyframes sunrise {
+  0% {
+    -webkit-transform: rotate(0deg) translate(-15em) rotate(0deg);
+        -ms-transform: rotate(0deg) translate(-15em) rotate(0deg);
+            transform: rotate(0deg) translate(-15em) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg) translate(-15em) rotate(-180deg);
+        -ms-transform: rotate(180deg) translate(-15em) rotate(-180deg);
+            transform: rotate(180deg) translate(-15em) rotate(-180deg);
+  }
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin: -50px;
+  background: red;
+  border-radius: 50%;
+  -webkit-animation: sunrise 1 4s 0s both ease-in-out;
+          animation: sunrise 1 4s 0s both ease-in-out;
 }

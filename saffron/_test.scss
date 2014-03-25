@@ -1,9 +1,12 @@
 .box {
-  @include aroundTheWorld();
-}
-.start {
-  height: 10px;
-  width: 10px;
-  background: black;
-  margin: 0 auto 0;
+  @include sunrise();
+  height: 100px;
+  width: 100px;
+  background: red;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px;
 }
