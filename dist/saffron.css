@@ -2647,6 +2647,52 @@
 
 @-webkit-keyframes aroundTheWorld {
   0% {
+    -webkit-transform: rotate(0deg) translate(-100px) rotate(0deg);
+            transform: rotate(0deg) translate(-100px) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg) translate(-100px) rotate(-360deg);
+            transform: rotate(360deg) translate(-100px) rotate(-360deg);
+  }
+}
+
+@-moz-keyframes aroundTheWorld {
+  0% {
+    transform: rotate(0deg) translate(-100px) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translate(-100px) rotate(-360deg);
+  }
+}
+
+@-o-keyframes aroundTheWorld {
+  0% {
+    transform: rotate(0deg) translate(-100px) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translate(-100px) rotate(-360deg);
+  }
+}
+
+@keyframes aroundTheWorld {
+  0% {
+    -webkit-transform: rotate(0deg) translate(-100px) rotate(0deg);
+        -ms-transform: rotate(0deg) translate(-100px) rotate(0deg);
+            transform: rotate(0deg) translate(-100px) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg) translate(-100px) rotate(-360deg);
+        -ms-transform: rotate(360deg) translate(-100px) rotate(-360deg);
+            transform: rotate(360deg) translate(-100px) rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes boxMoves {
+  0% {
     -webkit-transform: translateX(100%) translateY(0%);
             transform: translateX(100%) translateY(0%);
   }
@@ -2672,7 +2718,7 @@
   }
 }
 
-@-moz-keyframes aroundTheWorld {
+@-moz-keyframes boxMoves {
   0% {
     transform: translateX(100%) translateY(0%);
   }
@@ -2694,7 +2740,7 @@
   }
 }
 
-@-o-keyframes aroundTheWorld {
+@-o-keyframes boxMoves {
   0% {
     transform: translateX(100%) translateY(0%);
   }
@@ -2716,7 +2762,7 @@
   }
 }
 
-@keyframes aroundTheWorld {
+@keyframes boxMoves {
   0% {
     -webkit-transform: translateX(100%) translateY(0%);
         -ms-transform: translateX(100%) translateY(0%);
@@ -2749,9 +2795,14 @@
 }
 
 .box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 100px;
   height: 100px;
+  margin: -50px;
   background: red;
-  -webkit-animation: aroundTheWorld infinite 3s 0s none ease-in-out;
-          animation: aroundTheWorld infinite 3s 0s none ease-in-out;
+  border-radius: 50%;
+  -webkit-animation: aroundTheWorld infinite 2s 0s none ease-in-out;
+          animation: aroundTheWorld infinite 2s 0s none ease-in-out;
 }
