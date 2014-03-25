@@ -1,6 +1,7 @@
 @include keyframes(fadeOutDown) {
   0% {
     opacity: 1;
+    @include transform(translateZ(0));
   }
   100% {
     opacity: 0;

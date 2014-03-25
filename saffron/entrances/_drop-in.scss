@@ -1,7 +1,7 @@
 @include keyframes(dropIn) {
   0% {
     opacity: 0;
-    @include transform(translateY($drop-rise-distance * -1) rotate(0));
+    @include transform(translateY($drop-rise-distance * -1) rotate(0) translateZ(0));
   }
   10% {
     @include transform(translateY($drop-rise-distance * -1) rotate(-40deg));

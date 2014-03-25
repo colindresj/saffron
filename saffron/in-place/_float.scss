@@ -1,6 +1,6 @@
 @include keyframes(float) {
   0%, 50%, 100% {
-    @include transform(translateY($float-bob-distance * -1));
+    @include transform(translateY($float-bob-distance * -1) translateZ(0));
   }
   25% {
     @include transform(translateY($float-bob-distance) rotate($float-bob-angle));

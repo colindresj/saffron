@@ -1,6 +1,6 @@
 @include keyframes(sway) {
   0%, 50%, 100% {
-    @include transform(rotate($sway-angle));
+    @include transform(rotate($sway-angle) translateZ(0));
   }
   25% {
     @include transform(rotate($sway-angle * -1));

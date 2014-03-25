@@ -1,8 +1,7 @@
 .box {
-  @include squareDance();
+  @include slideInRight();
   height: 100px;
   width: 100px;
   background: red;
-  border-radius: 50%;
   margin: 50px auto;
 }

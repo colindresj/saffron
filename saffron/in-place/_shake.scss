@@ -1,6 +1,6 @@
 @include keyframes(shake) {
   0%, 100% {
-    @include transform(translateX(0));
+    @include transform(translateX(0) translateZ(0));
   }
   15% {
     @include transform(translateX($shake-distance));

@@ -1,7 +1,7 @@
 @include keyframes(pulsate) {
   0%, 100% {
     opacity: 1;
-    @include transform(scale(1));
+    @include transform(scale(1) translateZ(0));
   }
   50% {
     opacity: 0.85;

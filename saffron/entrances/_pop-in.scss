@@ -1,6 +1,6 @@
 @include keyframes(popIn) {
   0% {
-    @include transform(scale(0.25));
+    @include transform(scale(0.25) translateZ(0));
     opacity: 0;
   }
   100% {
