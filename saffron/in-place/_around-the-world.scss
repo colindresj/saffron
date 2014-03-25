@@ -1,21 +1,12 @@
 @include keyframes(aroundTheWorld) {
   0% {
-    @include transform(translateX(100%) translateY(0%));
-  }
-  25% {
-    @include transform(translateX(100%) translateY(100%));
-  }
-  50% {
-    @include transform(translateX(0%) translateY(100%));
-  }
-  75% {
-    @include transform(translateX(0%) translateY(0%));
+    @include transform(rotate(0deg) translate(-100px) rotate(0deg));
   }
   100% {
-    @include transform(translateX(100%) translateY(0%));
+    @include transform(rotate(360deg) translate(-100px) rotate(-360deg));
   }
 }
 
-@mixin aroundTheWorld($duration: 3s, $delay: 0s, $fill-mode: none, $count: infinite, $timing: ease-in-out) {
+@mixin aroundTheWorld($duration: 2s, $delay: 0s, $fill-mode: none, $count: infinite, $timing: ease-in-out) {
   @include animation(aroundTheWorld $count $duration $delay $fill-mode $timing);
 }
