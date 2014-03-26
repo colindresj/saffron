@@ -12,11 +12,12 @@ Sass 3.2+
   gem install saffron
 ```
 
-###Bundler and/or Rails
+###Rails
 Add the gem to your gemfile:
 ```ruby
   gem "saffron"
 ```
+Current support is for Rails 3.1+
 
 ###Manual Installation
 Download or clone the project repo from GitHub. Copy the `saffron` folder and paste into your `sass` folder (or whatever you call it). You won't need any of the other directories or files.
