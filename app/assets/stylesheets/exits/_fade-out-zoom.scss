@@ -1,0 +1,14 @@
+@include keyframes(fadeOutZoom) {
+  0% {
+    opacity: 1;
+    @include transform(translateZ(0));
+  }
+  100% {
+    opacity: 0;
+    @include transform(scale(0));
+  }
+}
+
+@mixin fadeOutZoom($duration: 1s, $delay: 0s, $fill-mode: forwards) {
+  @include animation(fadeOutZoom $duration $delay $fill-mode);
+}
