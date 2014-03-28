@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["JC"]
   spec.email         = ["j@colindres.me"]
   spec.summary       = "A simple sass mixin library for animations and transitions."
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/corporadobob/saffron"
   spec.license       = "MIT"
-  s.description = <<-DESC
+  spec.description   = <<-DESC
 Saffron is a collection of sass mixins and helpers that make adding CSS3 animations and transitions much simpler.
 Just include a mixin in your CSS declaration, then set any configuration using variables and mixin parameters.
   DESC

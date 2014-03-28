@@ -34,7 +34,7 @@ module Saffron
     end
 
     def install_saffron
-      directory "../saffron/", @destination
+      directory "../../saffron/", @destination
     end
   end
 end
