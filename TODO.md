@@ -1,8 +1,9 @@
-####Other
+####TODO
 ---
 - better sass error handling
-- package as gem
-- add example task to grunt
+- write sass compilation tests
 - build up docs
+- write tests for installation
 - test on more browsers
 - test on older versions of sass
+- switch grunt task to sasslib

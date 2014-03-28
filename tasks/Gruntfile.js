@@ -15,7 +15,7 @@ module.exports = function(grunt) {
     // Task configuration.
     watch: {
       sass: {
-        files: '<%= pkg.name %>/**/**.scss',
+        files: '../<%= pkg.name %>/**/**.scss',
         tasks: 'default',
         options: {
           livereload: true
@@ -30,7 +30,9 @@ module.exports = function(grunt) {
       }
     },
     clean: {
-      dist: ['dist/*']
+      options: { force: true },
+      build: ['compiled/*.css'],
+      rails: ['../app/**/*.scss']
     },
     sass: {
       dist: {
@@ -39,8 +41,9 @@ module.exports = function(grunt) {
           banner: '<%= banner %>'
         },
         files: {
-          'dist/<%= pkg.name %>.css': '<%= pkg.name %>/<%= pkg.name %>.scss'
-        }
+          'compiled/<%= pkg.name %>.css': '../<%= pkg.name %>/<%= pkg.name %>.scss',
+          'compiled/test.css': 'test.scss'
+        },
       }
     },
     csscomb: {
@@ -49,7 +52,8 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-            'dist/<%= pkg.name %>.css': 'dist/<%= pkg.name %>.css'
+            'compiled/<%= pkg.name %>.css': 'compiled/<%= pkg.name %>.css',
+            'compiled/test.css': 'compiled/test.css'
         }
       }
     },
@@ -57,7 +61,7 @@ module.exports = function(grunt) {
       options: {
         csslintrc: '.csslintrc'
       },
-      src: ['dist/<%= pkg.name %>.css']
+      src: ['compiled/<%= pkg.name %>.css', 'compiled/test.css']
     },
     cssmin: {
       options: {
@@ -68,8 +72,23 @@ module.exports = function(grunt) {
       },
       minify: {
         files: {
-          'dist/<%= pkg.name %>.min.css': 'dist/<%= pkg.name %>.css'
+          'compiled/<%= pkg.name %>.min.css': 'compiled/<%= pkg.name %>.css'
         }
+      }
+    },
+    copy: {
+      options: {
+        mode: true
+      },
+      main: {
+        files: [
+          {
+            expand: true,
+            cwd: '../<%= pkg.name %>/',
+            src: ['**/*.scss'],
+            dest: '../app/assets/stylesheets/'
+          }
+        ]
       }
     }
   });
@@ -82,9 +101,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-csscomb');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
-  // Default task.
+  // Tasks
   grunt.registerTask('livereload', ['connect', 'watch']);
-  grunt.registerTask('default', ['clean', 'sass', 'csscomb', 'csslint', 'cssmin']);
+  grunt.registerTask('railsBuild', ['clean:rails', 'copy']);
+  grunt.registerTask('default', ['clean:build', 'sass', 'csscomb', 'csslint']);
 
 };
