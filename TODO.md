@@ -6,4 +6,3 @@
 - write tests for installation
 - test on more browsers
 - test on older versions of sass
-- switch grunt task to sasslib
