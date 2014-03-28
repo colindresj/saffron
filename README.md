@@ -1,23 +1,37 @@
 #Saffron
 > A simple sass mixin library for animations and transitions.
 
-Saffron has been written to be easy to use. The mixins have been written using SCSS, but the intention has always been to stay as close to CSS as possible, while leverging the benefits of modularized mixins, each with their own arguments, in order to lend more user customization.
+Saffron is a collection of sass mixins and helpers that make adding CSS3 animations and transitions much simpler.
+Just include a mixin in your sass declaration, then set any configuration using variables and mixin parameters.
 
 ###Requirements
 Sass 3.2+
 
 ##Installing
 ###Standard Installation
+Install the gem from the command line with `gem install saffron`, then `cd` into the directory where you want to install Saffron and run the installation command:
 ```
-  gem install saffron
+saffron install
+```
+You can also use the `-p` flag to install Saffron into a relative directory:
+```
+saffron install -p path/to/directory
+```
+Finally, import the mixins into your main scss file:
+```scss
+  @import "saffron/saffron";
 ```
 
+
 ###Rails
-Add the gem to your gemfile:
+If you're using Rails 3.1+, you can add Saffron to your Gemfile:
 ```ruby
   gem "saffron"
 ```
-Current support is for Rails 3.1+
+Run `bundle install` to make all the mixins available to your Rails application, and import Saffron at the top of your application.css.scss:
+```scss
+@import "saffron";
+```
 
 ###Manual Installation
 Download or clone the project repo from GitHub. Copy the `saffron` folder and paste into your `sass` folder (or whatever you call it). You won't need any of the other directories or files.
@@ -26,7 +40,7 @@ Download or clone the project repo from GitHub. Copy the `saffron` folder and pa
   @import "saffron/saffron";
 ```
 
-You can now use any of the Saffron mixins:
+No matter how you installed Saffron, you can now use any of the mixins:
 
 ```scss
   .my-class {

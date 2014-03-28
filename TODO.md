@@ -2,7 +2,8 @@
 ---
 - better sass error handling
 - write sass compilation tests
-- build up docs
+- build up docs and wiki
 - write tests for installation
 - test on more browsers
 - test on older versions of sass
+- add update command

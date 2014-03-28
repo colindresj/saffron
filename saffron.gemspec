@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
   spec.description   = <<-DESC
 Saffron is a collection of sass mixins and helpers that make adding CSS3 animations and transitions much simpler.
-Just include a mixin in your CSS declaration, then set any configuration using variables and mixin parameters.
+Just include a mixin in your sass declaration, then set any configuration using variables and mixin parameters.
   DESC
 
 
