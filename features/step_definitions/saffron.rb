@@ -26,7 +26,12 @@ Then(/^saffron at "(.*?)" should still be modified with "(.*?)"$/) do |path, mod
   assert_partial_output mod, all_output
 end
 
+Then(/^saffron at "(.*?)" should no longer contain "(.*?)"$/) do |path, mod|
+  run_simple "cat #{path}/saffron.scss"
+  assert_no_partial_output mod, all_output
+end
+
 Given(/^Saffron does not yet exist$/) do
-  pending # express the regexp above with the code you wish you had
+  check_directory_presence(["saffron/"], false)
 end
 

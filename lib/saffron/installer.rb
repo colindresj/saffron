@@ -19,6 +19,18 @@ module Saffron
       end
     end
 
+    desc "update", "Updates Saffron."
+    method_option :path, :aliases => "-p", :desc => "Set the update path"
+    def update
+      if File.directory? set_destination
+        remove_saffron
+        install_saffron
+        puts "Saffron succesfully updated in #{@destination}/"
+      else
+        puts "Saffron not found. No updates occured."
+      end
+    end
+
     desc "version", "Outputs version number."
     def version
       say "Saffron #{Saffron::VERSION}"
@@ -35,6 +47,10 @@ module Saffron
 
     def install_saffron
       directory "../../saffron/", @destination
+    end
+
+    def remove_saffron
+      remove_dir @destination
     end
   end
 end
