@@ -22,34 +22,37 @@ Finally, import the mixins into your main scss file:
   @import "saffron/saffron";
 ```
 
-
 ###Rails
 If you're using Rails 3.1+, you can add Saffron to your Gemfile:
 ```ruby
   gem "saffron"
 ```
-Run `bundle install` to make all the mixins available to your Rails application, and import Saffron at the top of your application.css.scss:
+Run `bundle install` to make all the mixins available to your Rails application, and import Saffron at the top of your `application.css.scss`:
 ```scss
 @import "saffron";
 ```
 
 ###Manual Installation
 Download or clone the project repo from GitHub. Copy the `saffron` folder and paste into your `sass` folder (or whatever you call it). You won't need any of the other directories or files.
-
 ```scss
   @import "saffron/saffron";
 ```
-
 No matter how you installed Saffron, you can now use any of the mixins:
-
 ```scss
   .my-class {
     @include teeter();
   }
 ```
 
-##Documentation
-_Here be docs..._
+##Updating
+To get the latest mixins you should update the Saffron gem every once in a while. You can do so by running:
+```
+saffron update
+```
+If you initially installed Saffron into a specific directory using the `-p` flag, you'll need to do the the same when updating:
+```
+saffron update -p path/to/directory
+```
 
 ##Browser Support
 Saffron uses CSS3 transform, keyframes, animations and transitions, so it's really only for modern browsers. Visit http://caniuse.com/ for a clear idea of CSS3 browser support.

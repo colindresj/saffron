@@ -7,7 +7,7 @@ module Saffron
     source_root File.dirname(__FILE__)
     map ["--version", "-v"] => :version
 
-    desc "install", "Installs Saffron."
+    desc "install", "Installs Saffron"
     method_option :path, :aliases => "-p", :desc => "Set the install path"
     def install
       unless File.directory? set_destination
@@ -19,7 +19,7 @@ module Saffron
       end
     end
 
-    desc "update", "Updates Saffron."
+    desc "update", "Updates Saffron"
     method_option :path, :aliases => "-p", :desc => "Set the update path"
     def update
       if File.directory? set_destination
@@ -31,7 +31,7 @@ module Saffron
       end
     end
 
-    desc "version", "Outputs version number."
+    desc "version", "Outputs version number"
     def version
       say "Saffron #{Saffron::VERSION}"
     end
