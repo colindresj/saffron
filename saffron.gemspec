@@ -27,4 +27,5 @@ Just include a mixin in your sass declaration, then set any configuration using 
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "aruba", "~> 0.5"
 end

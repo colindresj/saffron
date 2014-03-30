@@ -13,7 +13,7 @@ module Saffron
       unless File.directory? set_destination
         set_destination
         install_saffron
-        puts "Saffron succesfully installed in #{@destination}"
+        puts "Saffron succesfully installed in #{@destination}/"
       else
         puts "Saffron already exists."
       end
