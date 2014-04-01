@@ -1,9 +1,12 @@
 @import "../saffron/saffron";
 
 .box {
-  @include ping();
   height: 100px;
   width: 100px;
+  margin: 0 auto;
   background: red;
+  text-align: center;
   border-radius: 50%;
+  padding-left: 0;
+  @include color(black, white);
 }

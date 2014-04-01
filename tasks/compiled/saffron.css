@@ -1710,7 +1710,7 @@
     -webkit-transform: scale(1) translateZ(0);
             transform: scale(1) translateZ(0);
 
-    -webkit-filter: blur(0px);
+    -webkit-filter: blur(0);
   }
 
   100% {
@@ -1727,7 +1727,7 @@
     opacity: 1;
     transform: scale(1) translateZ(0);
 
-    -webkit-filter: blur(0px);
+    -webkit-filter: blur(0);
   }
 
   100% {
@@ -1743,7 +1743,7 @@
     opacity: 1;
     transform: scale(1) translateZ(0);
 
-    -webkit-filter: blur(0px);
+    -webkit-filter: blur(0);
   }
 
   100% {
@@ -1761,7 +1761,7 @@
         -ms-transform: scale(1) translateZ(0);
             transform: scale(1) translateZ(0);
 
-    -webkit-filter: blur(0px);
+    -webkit-filter: blur(0);
   }
 
   100% {

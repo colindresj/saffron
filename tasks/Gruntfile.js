@@ -15,7 +15,7 @@ module.exports = function(grunt) {
     // Task configuration.
     watch: {
       sass: {
-        files: '../<%= pkg.name %>/**/**.scss',
+        files: ['../<%= pkg.name %>/**/**.scss', 'test.scss'],
         tasks: 'default',
         options: {
           livereload: true
