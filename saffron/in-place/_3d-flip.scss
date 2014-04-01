@@ -1,0 +1,59 @@
+@mixin threeDimensionalFlipUp($selector: ".flipUp", $duration: 0.5s, $delay: 0s, $timing: cubic-bezier(0.905, -0.190, 0.480, 0.995)) {
+  @include prefix(transform-style, preserve-3d, webkit spec);
+  @include transition(all $duration $delay $timing);
+  position: relative;
+  &#{$selector} {
+    @include transform(rotateX(-90deg) translateY(100%));
+    @include prefix(transform-origin, 50% 100%, webkit moz spec);
+  }
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  &::before {
+    top: 100%;
+    @include transform(rotateX(-90deg));
+    @include prefix(transform-origin, 0 0, webkit moz spec);
+    background: green;
+  }
+  &::after {
+    top: -100%;
+    @include transform(rotateX(90deg));
+    @include prefix(transform-origin, 0 100%, webkit moz spec);
+    background: blue;
+  }
+}
+
+@mixin threeDimensionalFlipDown($selector: ".flipDown", $duration: 0.5s, $delay: 0s, $timing: cubic-bezier(0.905, -0.190, 0.480, 0.995)) {
+  @include prefix(transform-style, preserve-3d, webkit spec);
+  @include transition(all $duration $delay $timing);
+  position: relative;
+  &#{$selector} {
+    @include transform(rotateX(90deg) translateY(-100%));
+    @include prefix(transform-origin, 50% 0, webkit moz spec);
+  }
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  &::before {
+    top: 100%;
+    @include transform(rotateX(-90deg));
+    @include prefix(transform-origin, 0 0, webkit moz spec);
+    background: green;
+  }
+  &::after {
+    top: -100%;
+    @include transform(rotateX(90deg));
+    @include prefix(transform-origin, 0 100%, webkit moz spec);
+    background: blue;
+  }
+}
