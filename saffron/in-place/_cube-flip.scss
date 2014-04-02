@@ -1,4 +1,4 @@
-@mixin threeDimensionalFlipUp($selector: ".flipUp", $duration: 0.5s, $delay: 0s, $timing: cubic-bezier(0.905, -0.190, 0.480, 0.995)) {
+@mixin cubeFlipUp($selector: ".flipUp", $duration: 0.5s, $delay: 0s, $timing: cubic-bezier(0.905, -0.190, 0.480, 0.995)) {
   position: relative;
   @include prefix(transform-style, preserve-3d, webkit spec);
   @include transition(all $duration $delay $timing);
@@ -26,7 +26,7 @@
   }
 }
 
-@mixin threeDimensionalFlipDown($selector: ".flipDown", $duration: 0.5s, $delay: 0s, $timing: cubic-bezier(0.905, -0.190, 0.480, 0.995)) {
+@mixin cubeFlipDown($selector: ".flipDown", $duration: 0.5s, $delay: 0s, $timing: cubic-bezier(0.905, -0.190, 0.480, 0.995)) {
   position: relative;
   @include prefix(transform-style, preserve-3d, webkit spec);
   @include transition(all $duration $delay $timing);
