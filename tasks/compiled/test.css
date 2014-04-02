@@ -3056,44 +3056,31 @@
   margin: 0 auto;
   text-align: center;
   background: red;
-  -webkit-transition: all .5s 0s cubic-bezier(.905, -.19, .48, .995);
-          transition: all .5s 0s cubic-bezier(.905, -.19, .48, .995);
+  -webkit-transition: all .5s 0s ease-in;
+          transition: all .5s 0s ease-in;
 
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
-.box.flipDown {
-  -webkit-transform: rotateX(90deg) translateY(-100%);
-      -ms-transform: rotateX(90deg) translateY(-100%);
-          transform: rotateX(90deg) translateY(-100%);
-  -webkit-transform-origin: 50% 0;
-     -moz-transform-origin: 50% 0;
-          transform-origin: 50% 0;
+.box.flipped {
+  -webkit-transform: rotateY(180deg) translateZ(0);
+      -ms-transform: rotateY(180deg) translateZ(0);
+          transform: rotateY(180deg) translateZ(0);
 }
-.box::before, .box::after {
+.box::after {
   position: absolute;
   left: 0;
   width: 100%;
   height: 100%;
   content: '';
-}
-.box::before {
-  top: 100%;
-  background: green;
-  -webkit-transform: rotateX(-90deg);
-      -ms-transform: rotateX(-90deg);
-          transform: rotateX(-90deg);
-  -webkit-transform-origin: 0 0;
-     -moz-transform-origin: 0 0;
-          transform-origin: 0 0;
-}
-.box::after {
-  top: -100%;
-  background: blue;
-  -webkit-transform: rotateX(90deg);
-      -ms-transform: rotateX(90deg);
-          transform: rotateX(90deg);
-  -webkit-transform-origin: 0 100%;
-     -moz-transform-origin: 0 100%;
-          transform-origin: 0 100%;
+  -webkit-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+
+  -webkit-backface-visibility: inherit;
+     -moz-backface-visibility: inherit;
+          backface-visibility: inherit;
 }
