@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    saffron (0.1.0.alpha)
+    saffron (0.1.1.alpha)
       sass (~> 3.2)
       thor
 
