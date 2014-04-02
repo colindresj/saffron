@@ -15,7 +15,7 @@ saffron install
 ```
 You can also use the `-p` flag to install Saffron into a relative directory:
 ```
-saffron install -p path/to/directory
+saffron install -p path/to/directory/
 ```
 Finally, import the mixins into your main scss file:
 ```scss
@@ -45,13 +45,13 @@ No matter how you installed Saffron, you can now use any of the mixins:
 ```
 
 ##Updating
-To get the latest mixins you should update the Saffron gem every once in a while. You can do so by running:
+To get the latest mixins you should update the Saffron files every once in a while. You can do so by running:
 ```
 saffron update
 ```
-If you initially installed Saffron into a specific directory using the `-p` flag, you'll need to do the the same when updating:
+If you initially installed Saffron in a specific directory using the `-p` flag, you'll need to do the the same when updating:
 ```
-saffron update -p path/to/directory
+saffron update -p path/to/directory/
 ```
 
 ##Browser Support
