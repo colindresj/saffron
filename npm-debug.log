@@ -1,0 +1,66 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/0.10.24/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'grunt-init-gruntfile' ]
+2 info using npm@1.3.21
+3 info using node@v0.10.24
+4 verbose cache add [ 'grunt-init-gruntfile', null ]
+5 verbose cache add name=undefined spec="grunt-init-gruntfile" args=["grunt-init-gruntfile",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'grunt-init-gruntfile',
+6 verbose parsed url   path: 'grunt-init-gruntfile',
+6 verbose parsed url   href: 'grunt-init-gruntfile' }
+7 silly lockFile 4e8c9402-grunt-init-gruntfile grunt-init-gruntfile
+8 verbose lock grunt-init-gruntfile /Users/Hint/.npm/4e8c9402-grunt-init-gruntfile.lock
+9 silly lockFile 4e8c9402-grunt-init-gruntfile grunt-init-gruntfile
+10 silly lockFile 4e8c9402-grunt-init-gruntfile grunt-init-gruntfile
+11 verbose addNamed [ 'grunt-init-gruntfile', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 1cd0e0dd-grunt-init-gruntfile grunt-init-gruntfile@
+14 verbose lock grunt-init-gruntfile@ /Users/Hint/.npm/1cd0e0dd-grunt-init-gruntfile.lock
+15 silly addNameRange { name: 'grunt-init-gruntfile', range: '*', hasData: false }
+16 verbose url raw grunt-init-gruntfile
+17 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-init-gruntfile' ]
+18 verbose url resolved https://registry.npmjs.org/grunt-init-gruntfile
+19 info trying registry request attempt 1 at 16:56:51
+20 http GET https://registry.npmjs.org/grunt-init-gruntfile
+21 http 404 https://registry.npmjs.org/grunt-init-gruntfile
+22 silly registry.get cb [ 404,
+22 silly registry.get   { date: 'Thu, 03 Apr 2014 20:56:51 GMT',
+22 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     'cache-control': 'max-age=0',
+22 silly registry.get     'content-length': '52',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     age: '0',
+22 silly registry.get     'x-served-by': 'cache-v44-ASH, cache-jfk1021-JFK',
+22 silly registry.get     'x-cache': 'MISS, MISS',
+22 silly registry.get     'x-cache-hits': '0, 0',
+22 silly registry.get     'x-timer': 'S1396558610.996179342,VS0,VS3,VE92,VE98',
+22 silly registry.get     'keep-alive': 'timeout=10, max=50',
+22 silly registry.get     connection: 'Keep-Alive' } ]
+23 silly lockFile 1cd0e0dd-grunt-init-gruntfile grunt-init-gruntfile@
+24 silly lockFile 1cd0e0dd-grunt-init-gruntfile grunt-init-gruntfile@
+25 error 404 'grunt-init-gruntfile' is not in the npm registry.
+25 error 404 You should bug the author to publish it
+25 error 404
+25 error 404 Note that you can also install from a
+25 error 404 tarball, folder, or http url, or git url.
+26 error System Darwin 13.1.0
+27 error command "/usr/local/Cellar/node/0.10.24/bin/node" "/usr/local/bin/npm" "install" "-g" "grunt-init-gruntfile"
+28 error cwd /Users/Hint/projects/saffron
+29 error node -v v0.10.24
+30 error npm -v 1.3.21
+31 error code E404
+32 verbose exit [ 1, true ]
