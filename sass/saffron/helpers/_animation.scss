@@ -1,0 +1,3 @@
+@mixin animation($properties...) {
+  @include prefix(animation, $properties, webkit spec);
+}

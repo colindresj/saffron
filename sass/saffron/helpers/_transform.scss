@@ -1,0 +1,9 @@
+@mixin transform($property: none) {
+  @if contains($prefixes, "webkit") and contains($prefixes, "ms") {
+    @include prefix(transform, $property, webkit ms spec);
+  } @else if contains($prefixes, "webkit") {
+    @include prefix(transform, $property, webkit spec);
+  } @else {
+    @include prefix(transform, $property, spec);
+  }
+}

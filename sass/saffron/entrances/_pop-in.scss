@@ -1,0 +1,14 @@
+@include keyframes(popIn) {
+  0% {
+    @include transform(scale(0.25) translateZ(0));
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    @include transform(scale(1));
+  }
+}
+
+@mixin popIn($duration: 0.5s, $delay: 0s, $fill-mode: forwards) {
+  @include animation(popIn $duration $delay $fill-mode);
+}

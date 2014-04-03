@@ -1,0 +1,12 @@
+@include keyframes(aroundTheWorld) {
+  0% {
+    @include transform(rotate(0deg) translate3d($distance-from-origin * -1, $distance-from-origin * -1, 0) rotate(0deg));
+  }
+  100% {
+    @include transform(rotate(360deg) translate3d($distance-from-origin * -1, $distance-from-origin * -1, 0) rotate(-360deg));
+  }
+}
+
+@mixin aroundTheWorld($duration: 2s, $delay: 0s, $fill-mode: none, $count: infinite, $timing: ease-in-out) {
+  @include animation(aroundTheWorld $count $duration $delay $fill-mode $timing);
+}
