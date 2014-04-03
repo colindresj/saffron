@@ -1,4 +1,7 @@
 #Saffron
+[![Build Status](https://travis-ci.org/corporadobob/saffron.svg?branch=v0.2.0)](https://travis-ci.org/corporadobob/saffron)
+[![Gem Version](https://badge.fury.io/rb/saffron.svg)](http://badge.fury.io/rb/saffron)
+
 > A simple sass mixin library for animations and transitions.
 
 Saffron is a collection of sass mixins and helpers that make adding CSS3 animations and transitions much simpler.
