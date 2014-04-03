@@ -11,7 +11,6 @@ module Saffron
     method_option :path, :aliases => "-p", :desc => "Set the install path"
     def install
       unless File.directory? set_destination
-        set_destination
         install_saffron
         puts "Saffron succesfully installed in #{@destination}/"
       else
