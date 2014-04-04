@@ -22,6 +22,6 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 function getRandomNumber() {
-  var max = 9, min = 1;
+  var max = 17, min = 1;
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
