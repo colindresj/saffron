@@ -4,8 +4,6 @@
 
 body {
   background: lighten(#ECF0F1, 2%);
-  font-weight: 00;
-  font-size: 32px;
   color: #8C9899;
 }
 
@@ -30,16 +28,17 @@ figure {
 
 footer {
   position: absolute;
-  bottom: 35px;
+  bottom: 100px;
   width: 100%;
   text-align: center;
-  font-family: 'Stalemate', cursive;
-  font-size: 63px;
+  font-family: 'Voltaire', sans-serif;
+  font-size: 24px;
+  color: lighten(black, 40%);
 }
 
 //Entrances
 .c-1 {
-  @include fadeIn();
+  @include turnDownIn();
 }
 
 .c-2 {
@@ -50,32 +49,67 @@ footer {
   @include popIn();
 }
 
-// In Place
-.c-4 {
-  @include float();
-}
-
-.c-5 {
-  @include ping($count: 3, $delay: 1s);
-  border-radius: 50%;
-}
-
-.c-6 {
-  @include aroundTheWorld($count: 3, $delay: 1s, $fill-mode: backwards);
-  border-radius: 50%;
-}
-
 // Exits
-.c-7 {
+.c-4 {
   @include explode($fill-mode: none);
 }
 
-.c-8 {
+.c-5 {
   @include poof($fill-mode: none);
 }
 
-.c-9 {
+.c-6 {
   @include compressDown($fill-mode: none);
 }
+
+// In Place
+.c-7 {
+  @include float();
+}
+
+.c-8 {
+  @include ping($count: 3, $delay: 1s);
+  @include circle;
+}
+
+.c-9 {
+  @include aroundTheWorld($count: 3, $delay: 1s, $fill-mode: backwards);
+  @include circle;
+}
+
+.c-10 {
+  @include shake();
+}
+
+.c-11 {
+  @include teeter();
+}
+
+.c-12 {
+  @include quiver();
+}
+
+.c-13 {
+  @include sway();
+}
+
+.c-14 {
+  @include spin();
+}
+
+.c-15 {
+  @include pulsate();
+}
+
+.c-16 {
+  @include squareDance();
+}
+
+.c-17 {
+  @include sunrise();
+  @include circle;
+}
+
+
 
 
