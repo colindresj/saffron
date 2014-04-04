@@ -1,12 +1,12 @@
 @import "saffron/saffron";
+@import "fonts";
 @import "variables";
 
 body {
-  background: #F5FAFA;
-  font-family: 'Alegreya Sans', sans-serif;
-  font-weight: 300;
+  background: lighten(#ECF0F1, 2%);
+  font-weight: 00;
   font-size: 32px;
-  color: #005071;
+  color: #8C9899;
 }
 
 figure {
@@ -17,19 +17,26 @@ figure {
   margin-left: -($figure-width / 2);
   width: $figure-height;
   height: $figure-width;
-  background: #FF3731;
-  // Jorge's choice
-  // background: #ED4846;
+  background: #D1457E;
   border-radius: 0;
-  @include transition(border-radius 0.5s ease);
+  @include transition(all 0.5s ease);
+}
+
+.title {
+  text-align: center;
+  font-family: 'Stalemate', cursive;
+  font-size: 100px;
 }
 
 footer {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 25px;
+  bottom: 35px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Stalemate', cursive;
+  font-size: 63px;
 }
+
 //Entrances
 .c-1 {
   @include fadeIn();
@@ -54,7 +61,7 @@ footer {
 }
 
 .c-6 {
-  @include aroundTheWorld($count: 3, $delay: 1s);
+  @include aroundTheWorld($count: 3, $delay: 1s, $fill-mode: backwards);
   border-radius: 50%;
 }
 

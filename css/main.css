@@ -2332,12 +2332,17 @@
     -ms-transform: rotate(180deg) translate(-15em) rotate(-180deg);
     transform: rotate(180deg) translate(-15em) rotate(-180deg); } }
 
+@font-face {
+  font-family: 'Stalemate';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Stalemate'), local('Stalemate-Regular'), url(http://themes.googleusercontent.com/static/fonts/stalemate/v2/ILXfSNYxooD2TPt48NlaP7O3LdcAZYWl9Si6vvxL-qU.woff) format('woff'); }
+
 body {
-  background: #F5FAFA;
-  font-family: 'Alegreya Sans', sans-serif;
-  font-weight: 300;
+  background: #f2f5f5;
+  font-weight: 0;
   font-size: 32px;
-  color: #005071; }
+  color: #8C9899; }
 
 figure {
   position: absolute;
@@ -2347,16 +2352,23 @@ figure {
   margin-left: -100px;
   width: 200px;
   height: 200px;
-  background: #FF3731;
+  background: #D1457E;
   border-radius: 0;
-  -webkit-transition: border-radius 0.5s ease;
-  transition: border-radius 0.5s ease; }
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.title {
+  text-align: center;
+  font-family: 'Stalemate', cursive;
+  font-size: 100px; }
 
 footer {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 25px; }
+  bottom: 35px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Stalemate', cursive;
+  font-size: 63px; }
 
 .c-1 {
   -webkit-animation: fadeIn 1s 0s forwards;
@@ -2381,8 +2393,8 @@ footer {
   border-radius: 50%; }
 
 .c-6 {
-  -webkit-animation: aroundTheWorld 3 2s 1s none ease-in-out;
-  animation: aroundTheWorld 3 2s 1s none ease-in-out;
+  -webkit-animation: aroundTheWorld 3 2s 1s backwards ease-in-out;
+  animation: aroundTheWorld 3 2s 1s backwards ease-in-out;
   border-radius: 50%; }
 
 .c-7 {
