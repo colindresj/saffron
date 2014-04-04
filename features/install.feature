@@ -1,4 +1,3 @@
-@disable-bundler
 Feature: Install saffron
   As a user
   I want to easily generate the Saffron files and directories

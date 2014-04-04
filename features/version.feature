@@ -1,4 +1,3 @@
-@disable-bundler
 Feature: Output version
   As a user
   I want to know the current version of Saffron I have installed

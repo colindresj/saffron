@@ -1,4 +1,3 @@
-@disable-bundler
 Feature: Update saffron
   As a user
   I want to easily update my Saffron files
