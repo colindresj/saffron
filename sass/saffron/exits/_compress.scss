@@ -1,0 +1,25 @@
+@include keyframes(compress) {
+  0% {
+    @include transform(scaleY(1) translateZ(0));
+  }
+  30% {
+    @include transform(scaleY($stretch-compress-exageration));
+  }
+  50% {
+    @include transform(scaleY($stretch-compress-exageration - ($stretch-compress-exageration * .075)));
+  }
+  100% {
+    @include transform(scaleY(0));
+  }
+}
+
+@mixin compressUp($duration: 0.7s, $delay: 0s, $count: 1, $fill-mode: both, $timing: ease-out) {
+  @include animation(compress $count $duration $delay $fill-mode $timing);
+  @include prefix(transform-origin, 0 0, webkit moz spec);
+}
+
+@mixin compressDown($duration: 0.7s, $delay: 0s, $count: 1, $fill-mode: both, $timing: ease-out) {
+  @include animation(compress $count $duration $delay $fill-mode $timing);
+  @include prefix(transform-origin, 0 100%, webkit moz spec);
+}
+

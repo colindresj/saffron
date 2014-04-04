@@ -1,0 +1,29 @@
+@include keyframes(slideOutLeft) {
+  35% {
+    opacity: 1;
+    @include transform(translateX($translateX-distance) translateZ(0));
+  }
+  100% {
+    opacity: 0;
+    @include transform(translateX($translateX-distance * -10));
+  }
+}
+
+@mixin slideOutLeft($duration: 1s, $delay: 0s, $fill-mode: forwards) {
+  @include animation(slideOutLeft $duration $delay $fill-mode);
+}
+
+@include keyframes(slideOutRight) {
+  35% {
+    opacity: 1;
+    @include transform(translateX($translateX-distance * -1) translateZ(0));
+  }
+  100% {
+    opacity: 0;
+    @include transform(translateX($translateX-distance * 10));
+  }
+}
+
+@mixin slideOutRight($duration: 1s, $delay: 0s, $fill-mode: forwards) {
+  @include animation(slideOutRight $duration $delay $fill-mode);
+}

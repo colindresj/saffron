@@ -1,0 +1,13 @@
+@include keyframes(riseIn) {
+  0% {
+    opacity: 0;
+    @include transform(translateY($drop-rise-distance) translateZ(0));
+  }
+  50% {
+    opacity: 1
+  }
+}
+
+@mixin riseIn($duration: 0.5s, $delay: 0s, $fill-mode: forwards) {
+  @include animation(riseIn $duration $delay $fill-mode);
+}

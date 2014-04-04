@@ -1,0 +1,14 @@
+@include keyframes(pulsate) {
+  0%, 100% {
+    opacity: 1;
+    @include transform(scale(1) translateZ(0));
+  }
+  50% {
+    opacity: 0.85;
+    @include transform(scale($pulsate-scale));
+  }
+}
+
+@mixin pulsate($duration: 1.5s, $delay: 0s, $fill-mode: none, $count: 3) {
+  @include animation(pulsate $count $duration $delay $fill-mode);
+}

@@ -1,0 +1,14 @@
+@include keyframes(explode) {
+  0% {
+    opacity: 1;
+    @include transform(translateZ(0));
+  }
+  100% {
+    opacity: 0;
+    @include transform(scale(5));
+  }
+}
+
+@mixin explode($duration: 0.5s, $delay: 0s, $fill-mode: forwards) {
+  @include animation(explode $duration $delay $fill-mode);
+}

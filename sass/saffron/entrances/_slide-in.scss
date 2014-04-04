@@ -1,0 +1,35 @@
+@include keyframes(slideInLeft) {
+  0% {
+    opacity: 0;
+    @include transform(translateX($translateX-distance * -10) translateZ(0));
+  }
+  65% {
+    opacity: 1;
+    @include transform(translateX($translateX-distance));
+  }
+  100% {
+    @include transform(translateX(0));
+  }
+}
+
+@mixin slideInLeft($duration: 1s, $delay: 0s, $fill-mode: forwards) {
+  @include animation(slideInLeft $duration $delay $fill-mode);
+}
+
+@include keyframes(slideInRight) {
+  0% {
+    opacity: 0;
+    @include transform(translateX($translateX-distance * 10) translateZ(0));
+  }
+  65% {
+    opacity: 1;
+    @include transform(translateX($translateX-distance * -1));
+  }
+  100% {
+    @include transform(translateX(0));
+  }
+}
+
+@mixin slideInRight($duration: 1s, $delay: 0s, $fill-mode: forwards) {
+  @include animation(slideInRight $duration $delay $fill-mode);
+}
