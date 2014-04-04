@@ -14,17 +14,23 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      reload: {
-        files: ['**/*.scss', '**/*.html'],
-        tasks: ['sass'],
-        options: {
-          livereload: true,
-        },
+      styles: {
+        files: ['sass/main.scss'],
+        tasks: ['clean:styles', 'sass', 'cssmin']
       },
+      scripts: {
+        files: ['js/script.js'],
+        tasks: ['clean:scripts', 'uglify']
+      },
+      livereload: {
+        options: { livereload: true },
+        files: ['assets/*.min.css', 'assets/*.min.js']
+      }
     },
     clean: {
       options: { force: true },
-      build: ['**/*.css']
+      styles: ['assets/*.css'],
+      scripts: ['assets/*.js']
     },
     sass: {
       dist: {
@@ -51,7 +57,17 @@ module.exports = function(grunt) {
       },
       minify: {
         files: {
-          'css/main.min.css': 'css/main.css'
+          'assets/main.min.css': ['bower_components/normalize-css/normalize.css', 'css/main.css']
+        }
+      }
+    },
+    uglify: {
+      options: {
+        report: 'min'
+      },
+      dist: {
+        files: {
+          'assets/script.min.js': 'js/script.js'
         }
       }
     }
@@ -64,10 +80,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task.
   grunt.registerTask('default', ['server']);
   grunt.registerTask('server', ['connect', 'watch']);
-  grunt.registerTask('build', ['clean', 'sass', 'csslint', 'cssmin']);
+  grunt.registerTask('build', ['clean', 'sass', 'csslint', 'cssmin', 'uglify']);
 
 };

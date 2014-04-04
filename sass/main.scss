@@ -1,2 +1,74 @@
 @import "saffron/saffron";
+@import "variables";
+
+body {
+  background: #F5FAFA;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  color: #005071;
+}
+
+figure {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -($figure-height / 2);
+  margin-left: -($figure-width / 2);
+  width: $figure-height;
+  height: $figure-width;
+  background: #FF3731;
+  // Jorge's choice
+  // background: #ED4846;
+  border-radius: 0;
+  @include transition(border-radius 0.5s ease);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 25px;
+}
+//Entrances
+.c-1 {
+  @include fadeIn();
+}
+
+.c-2 {
+  @include newspaper();
+}
+
+.c-3 {
+  @include popIn();
+}
+
+// In Place
+.c-4 {
+  @include float();
+}
+
+.c-5 {
+  @include ping($count: 3, $delay: 1s);
+  border-radius: 50%;
+}
+
+.c-6 {
+  @include aroundTheWorld($count: 3, $delay: 1s);
+  border-radius: 50%;
+}
+
+// Exits
+.c-7 {
+  @include explode($fill-mode: none);
+}
+
+.c-8 {
+  @include poof($fill-mode: none);
+}
+
+.c-9 {
+  @include compressDown($fill-mode: none);
+}
+
 
