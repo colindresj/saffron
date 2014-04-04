@@ -103,6 +103,8 @@ footer {
 
 .c-16 {
   @include squareDance();
+  margin-top: -($figure-height / 1.2);
+  margin-left: -($figure-width);
 }
 
 .c-17 {

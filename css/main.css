@@ -2454,7 +2454,9 @@ footer {
 
 .c-16 {
   -webkit-animation: squareDance infinite 3s 0s none ease-in-out;
-  animation: squareDance infinite 3s 0s none ease-in-out; }
+  animation: squareDance infinite 3s 0s none ease-in-out;
+  margin-top: -166.66667px;
+  margin-left: -200px; }
 
 .c-17 {
   -webkit-animation: sunrise 1 4s 0s both ease-in-out;
