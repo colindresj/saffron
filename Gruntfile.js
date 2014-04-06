@@ -57,7 +57,7 @@ module.exports = function(grunt) {
       },
       minify: {
         files: {
-          'assets/main.min.css': ['bower_components/normalize-css/normalize.css', 'css/main.css']
+          'assets/main.min.css': 'css/main.css'
         }
       }
     },
