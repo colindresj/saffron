@@ -1,13 +1,21 @@
 @font-face {
-  font-family: 'Stalemate';
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Maven Pro Black'), local('MavenProBlack'), url(http://themes.googleusercontent.com/static/fonts/mavenpro/v5/-91TwiFzqeL1F7Kh91APwaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Libre Baskerville';
   font-style: normal;
   font-weight: 400;
-  src: local('Stalemate'), local('Stalemate-Regular'), url(http://themes.googleusercontent.com/static/fonts/stalemate/v2/ILXfSNYxooD2TPt48NlaP7O3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+  src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(http://themes.googleusercontent.com/static/fonts/librebaskerville/v2/pR0sBQVcY0JZc_ciXjFsK5gtRqbDAavNCEBluaoIIJc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Libre Baskerville Italic'), local('LibreBaskerville-Italic'), url(http://themes.googleusercontent.com/static/fonts/librebaskerville/v2/QHIOz1iKF3bIEzRdDFaf5SO-5kXrvlsa0llgP70kI5w.woff) format('woff');
 }
 
-@font-face {
-  font-family: 'Voltaire';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Voltaire'), url(http://themes.googleusercontent.com/static/fonts/voltaire/v4/ag0Q3_6hjQFerbCN2Eewq3YhjbSpvc47ee6xR_80Hnw.woff) format('woff');
-}
+%maven-pro { font-family: 'Maven Pro', sans-serif; }
+%libre-baskerville { font-family: 'Libre Baskerville', serif; }

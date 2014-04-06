@@ -1,88 +1,101 @@
+$translateY-distance: 5px;
 @import "saffron/saffron";
+@import "reset";
 @import "fonts";
 @import "variables";
 
 body {
-  background: lighten(#ECF0F1, 2%);
-  color: #8C9899;
+  background: #fff;
+}
+
+a {
+  position: relative;
+  color: #231f20;
+  text-decoration: none;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    opacity: 0;
+    background: #231f20;
+    @include transition(all 0.5s);
+  }
+  &:hover {
+    &::after {
+      bottom: -5px;
+      opacity: 1;
+    }
+  }
 }
 
 .container {
   font-size: 32px;
-  color: lighten(#8C9899, 10%);
+  color: #231f20;
+}
+
+nav,
+header {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.inline-list {
+  .list-item {
+    display: inline;
+    margin-right: 20px;
+    @extend %libre-baskerville;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.title,
+.sub-title {
+  text-align: center;
 }
 
 .title {
-  text-align: center;
-  font-family: 'Stalemate', cursive;
-  font-size: 120px;
+  padding: 10px 0;
+  @extend %maven-pro;
+  font-size: 60px;
+  text-transform: uppercase;
 }
 
-.bunny {
-  position: relative;
-  margin: 100px auto 0;
-  height: 110px;
-  width: 100px;
+.sub-title {
+  @extend %libre-baskerville;
+  font-style: italic;
+}
+
+.saffron {
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
-  background: desaturate(pink, 30%);
-  @include transition(all 0.5s ease);
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: -60px;
-    height: 100px;
-    width: 32px;
-    border-radius: 15px;
-    background: inherit;
-  }
- &::before {
-   left: 0;
-   -webkit-transform: rotate(-15deg);
- }
- &::after {
-   right: 0;
-   -webkit-transform: rotate(15deg);
- }
+  margin: 0 auto;
+  background: transparent;
+  border: 5px solid #c0392b;
 }
 
-.eye,
-.mouth {
-  position: absolute;
-  bottom: 100px;
-  width: 100%;
-  text-align: center;
-  font-family: 'Voltaire', sans-serif;
-  font-size: 24px;
-  color: lighten(black, 40%);
-}
 
 //Entrances
-.c-1 {
-  @include turnDownIn();
-}
+.c-1 { @include turnDownIn(); }
 
 .c-2 { @include newspaper(); }
 
 .c-3 { @include popIn(); }
 
 // Exits
-.c-4 {
-  @include explode($fill-mode: none);
-}
+.c-4 { @include explode($fill-mode: none); }
 
-.c-5 {
-  @include poof($fill-mode: none);
-}
+.c-5 { @include poof($fill-mode: none); }
 
-.c-6 {
-  @include compressDown($fill-mode: none);
-}
+.c-6 { @include compressDown($fill-mode: none); }
 
 // In Place
-.c-7 {
-  @include float();
-}
+.c-7 { @include float(); }
 
 .c-8 {
   @include ping($count: 3, $delay: 1s);
@@ -94,29 +107,17 @@ body {
   @include circle;
 }
 
-.c-10 {
-  @include shake();
-}
+.c-10 { @include shake(); }
 
-.c-11 {
-  @include teeter();
-}
+.c-11 { @include teeter(); }
 
-.c-12 {
-  @include quiver();
-}
+.c-12 { @include quiver(); }
 
-.c-13 {
-  @include sway();
-}
+.c-13 { @include sway(); }
 
-.c-14 {
-  @include spin();
-}
+.c-14 { @include spin(); }
 
-.c-15 {
-  @include pulsate();
-}
+.c-15 { @include pulsate(); }
 
 .c-16 {
   @include squareDance();
