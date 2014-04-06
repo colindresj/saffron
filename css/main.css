@@ -2348,25 +2348,40 @@ body {
   background: #f2f5f5;
   color: #8C9899; }
 
-figure {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -100px;
-  margin-left: -100px;
-  width: 200px;
-  height: 200px;
-  background: #D1457E;
-  border-radius: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+.container {
+  font-size: 32px;
+  color: #a7b0b1; }
 
 .title {
   text-align: center;
   font-family: 'Stalemate', cursive;
-  font-size: 100px; }
+  font-size: 120px; }
 
-footer {
+.bunny {
+  position: relative;
+  margin: 100px auto 0;
+  height: 110px;
+  width: 100px;
+  border-radius: 50%;
+  background: #f6c9d2;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .bunny::before, .bunny::after {
+    content: '';
+    position: absolute;
+    top: -60px;
+    height: 100px;
+    width: 32px;
+    border-radius: 15px;
+    background: inherit; }
+  .bunny::before {
+    left: 0;
+    -webkit-transform: rotate(-15deg); }
+  .bunny::after {
+    right: 0;
+    -webkit-transform: rotate(15deg); }
+
+.eye, .mouth {
   position: absolute;
   bottom: 100px;
   width: 100%;
@@ -2424,6 +2439,7 @@ footer {
   width: 125px;
   margin-top: -62.5px;
   margin-left: -62.5px; }
+
 
 .c-10 {
   -webkit-animation: shake 0.5s 0s none 1;

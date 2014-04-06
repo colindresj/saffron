@@ -7,26 +7,47 @@ body {
   color: #8C9899;
 }
 
-figure {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -($figure-height / 2);
-  margin-left: -($figure-width / 2);
-  width: $figure-height;
-  height: $figure-width;
-  background: #D1457E;
-  border-radius: 0;
-  @include transition(all 0.5s ease);
+.container {
+  font-size: 32px;
+  color: lighten(#8C9899, 10%);
 }
 
 .title {
   text-align: center;
   font-family: 'Stalemate', cursive;
-  font-size: 100px;
+  font-size: 120px;
 }
 
-footer {
+.bunny {
+  position: relative;
+  margin: 100px auto 0;
+  height: 110px;
+  width: 100px;
+  border-radius: 50%;
+  background: desaturate(pink, 30%);
+  @include transition(all 0.5s ease);
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -60px;
+    height: 100px;
+    width: 32px;
+    border-radius: 15px;
+    background: inherit;
+  }
+ &::before {
+   left: 0;
+   -webkit-transform: rotate(-15deg);
+ }
+ &::after {
+   right: 0;
+   -webkit-transform: rotate(15deg);
+ }
+}
+
+.eye,
+.mouth {
   position: absolute;
   bottom: 100px;
   width: 100%;
@@ -41,13 +62,9 @@ footer {
   @include turnDownIn();
 }
 
-.c-2 {
-  @include newspaper();
-}
+.c-2 { @include newspaper(); }
 
-.c-3 {
-  @include popIn();
-}
+.c-3 { @include popIn(); }
 
 // Exits
 .c-4 {

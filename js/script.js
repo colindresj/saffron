@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
-  var figure = document.querySelector('figure'),
+  var figure = document.querySelector('.eye'),
       classNumber = 1,
       previousClassNumber;
 
