@@ -1,28 +1,65 @@
-$translateY-distance: 5px;
-$tablet: 600px;
-$desktop: 900px;
-
+@import "variables";
 @import "saffron/saffron";
 @import "reset";
 @import "fonts";
-@import "variables";
+
+@mixin circle {
+  border-radius: $cirle-radius;
+  height: $cirle-height;
+  width: $cirle-width;
+  margin-top: -($cirle-height / 2);
+  margin-left: -($cirle-width / 2);
+}
+
+@mixin makeSquare {
+  border-radius: 3px;
+}
+
+@mixin makeCircle {
+  border-radius: 50%;
+}
 
 body {
+  padding: 0 $medium-spacing;
   background: #fff;
   @extend %libre-baskerville;
-  padding: 0 30px;
 }
 
 ::selection {
-  background: lighten(#c0392b, 35%); /* Safari */
+  background: lighten($main-color, 35%);
   }
 ::-moz-selection {
-  background: lighten(#c0392b, 35%); /* Firefox */
+  background: lighten($main-color, 35%);
+}
+
+nav,
+header {
+  margin: $large-spacing 0;
+  text-align: center;
+}
+
+section {
+  width: 100%;
+  margin: 0 auto;
+  padding: $large-spacing 0;
+  @media screen and (min-width: $tablet) {
+    width: 80%;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 70%;
+  }
+}
+
+footer {
+  margin: $medium-spacing 0 0;
+  @media screen and (min-width: $tablet) {
+    text-align: center;
+  }
 }
 
 a {
   position: relative;
-  color: #231f20;
+  color: $secondary-color;
   text-decoration: none;
   &::after {
     content: '';
@@ -32,7 +69,7 @@ a {
     width: 100%;
     height: 1px;
     opacity: 0;
-    background: #231f20;
+    background: $secondary-color;
     @include transition(all 0.5s);
   }
   &:hover {
@@ -43,38 +80,15 @@ a {
   }
 }
 
-section {
-  width: 100%;
-  margin: 0 auto;
-  padding: 50px 0;
-  @media screen and (min-width: $tablet) {
-    width: 80%;
-  }
-  @media screen and (min-width: $desktop) {
-    width: 70%;
-  }
-}
-
 p {
+  margin-bottom: $medium-spacing;
   line-height: 1.45em;
-  margin-bottom: 35px;
   opacity: 0;
   @include fadeIn($delay: 1s);
   &:last-of-type {
     margin-bottom: 0;
     @include fadeIn($delay: 1.5s);
   }
-}
-
-nav,
-header {
-  margin: 50px 0;
-  text-align: center;
-}
-
-footer {
-  margin: 35px 0 0;
-  text-align: center;
 }
 
 .inline-list {
@@ -94,7 +108,7 @@ footer {
 }
 
 .title {
-  padding: 10px 0;
+  padding: $light-spacing 0;
   @extend %maven-pro;
   font-size: 60px;
   text-transform: uppercase;
@@ -106,68 +120,59 @@ footer {
 }
 
 .saffron {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
+  height: $large-spacing;
+  width: $large-spacing;
   margin: 0 auto;
   background: transparent;
-  border: 5px solid #c0392b;
+  border: 5px solid $main-color;
+  border-radius: 50%;
   &:hover {
     cursor: pointer;
   }
 }
 
-
 //Entrances
 .c-1 { @include turnDownIn(); }
 
-.c-2 { @include newspaper(); }
+.c-2 { @include popIn(); }
 
-.c-3 { @include popIn(); }
+.c-3 { @include dropIn(); }
+
+.c-4 { @include riseIn(); }
+
+.c-5 {
+  @include makeSquare();
+  @include newspaper();
+}
 
 // Exits
-.c-4 { @include explode($fill-mode: none); }
+.c-6 {
+  @include makeSquare();
+  @include compressDown($fill-mode: none);
+}
 
-.c-5 { @include poof($fill-mode: none); }
+.c-7 {
+  @include makeSquare();
+  @include explode($fill-mode: none);
+}
 
-.c-6 { @include compressDown($fill-mode: none); }
+.c-8 { @include slideOutLeft($fill-mode: none); }
+
+.c-9 { @include slideOutRight($fill-mode: none); }
+
+.c-10 { @include fadeOutZoomBig($fill-mode: none); }
 
 // In Place
-.c-7 { @include float(); }
-
-.c-8 {
-  @include ping($count: 3, $delay: 1s);
-  @include circle;
+.c-11 {
+  @include makeSquare();
+  @include float();
 }
 
-.c-9 {
-  @include aroundTheWorld($count: 3, $delay: 1s, $fill-mode: backwards);
-  @include circle;
-}
+.c-12 { @include ping($count: 3); }
 
-.c-10 { @include shake(); }
+.c-13 { @include quiver(); }
 
-.c-11 { @include teeter(); }
+.c-14 { @include pulsate(); }
 
-.c-12 { @include quiver(); }
-
-.c-13 { @include sway(); }
-
-.c-14 { @include spin(); }
-
-.c-15 { @include pulsate(); }
-
-.c-16 {
-  @include squareDance();
-  margin-top: -($figure-height / 1.2);
-  margin-left: -($figure-width);
-}
-
-.c-17 {
-  @include sunrise();
-  @include circle;
-}
-
-
-
+.c-15 { @include sunrise($fill-mode: none); }
 

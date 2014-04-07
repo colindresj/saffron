@@ -4,14 +4,16 @@ $cirle-height: 125px;
 $cirle-width: 125px;
 $cirle-radius: 50%;
 
-@mixin circle {
-  border-radius: $cirle-radius;
-  height: $cirle-height;
-  width: $cirle-width;
-  margin-top: -($cirle-height / 2);
-  margin-left: -($cirle-width / 2);
-}
+// Saffron
+$translateY-distance: 5px;
 
+// Theme
+$main-color: #c0392b;
+$secondary-color: #231f20;
+$light-spacing: 10px;
+$medium-spacing: 30px;
+$large-spacing: 50px;
 
-
-
+// Media queries
+$tablet: 600px;
+$desktop: 900px;

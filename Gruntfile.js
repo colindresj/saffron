@@ -19,7 +19,7 @@ module.exports = function(grunt) {
         tasks: ['clean:styles', 'sass', 'cssmin']
       },
       scripts: {
-        files: ['js/script.js'],
+        files: ['js/main.js'],
         tasks: ['clean:scripts', 'uglify']
       },
       livereload: {
@@ -67,7 +67,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'assets/script.min.js': 'js/script.js'
+          'assets/main.min.js': 'js/main.js'
         }
       }
     }
