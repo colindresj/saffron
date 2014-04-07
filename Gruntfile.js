@@ -20,7 +20,7 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: ['js/main.js'],
-        tasks: ['clean:scripts', 'uglify']
+        tasks: ['clean:scripts', 'coffee', 'uglify']
       },
       livereload: {
         options: { livereload: true },
@@ -61,6 +61,11 @@ module.exports = function(grunt) {
         }
       }
     },
+    coffee: {
+      files: {
+        'js/main.js': 'coffee/main.coffee',
+      }
+    },
     jshint: {
       options: {
         jshintrc: '.jshintrc',
@@ -87,12 +92,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
   // Default task.
   grunt.registerTask('default', ['server']);
   grunt.registerTask('server', ['connect', 'watch']);
-  grunt.registerTask('build', ['clean', 'sass', 'csslint', 'cssmin', 'uglify']);
-
+  grunt.registerTask('build', ['clean', 'sass', 'csslint', 'cssmin', 'coffee', 'jshint', 'uglify']);
 };
