@@ -3,22 +3,6 @@
 @import "reset";
 @import "fonts";
 
-@mixin circle {
-  border-radius: $cirle-radius;
-  height: $cirle-height;
-  width: $cirle-width;
-  margin-top: -($cirle-height / 2);
-  margin-left: -($cirle-width / 2);
-}
-
-@mixin makeSquare {
-  border-radius: 3px;
-}
-
-@mixin makeCircle {
-  border-radius: 50%;
-}
-
 body {
   padding: 0 $medium-spacing;
   background: #fff;
@@ -129,6 +113,11 @@ p {
   &:hover {
     cursor: pointer;
   }
+}
+
+// Uitility
+@mixin makeSquare {
+  border-radius: 3px;
 }
 
 //Entrances
