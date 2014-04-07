@@ -61,6 +61,13 @@ module.exports = function(grunt) {
         }
       }
     },
+    jshint: {
+      options: {
+        jshintrc: '.jshintrc',
+        reporter: require('jshint-stylish')
+      },
+      all: ['Gruntfile.js', 'js/main.js']
+    },
     uglify: {
       options: {
         report: 'min'
@@ -81,6 +88,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 
   // Default task.
   grunt.registerTask('default', ['server']);
