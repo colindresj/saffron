@@ -2386,11 +2386,20 @@ table {
 .title {
   font-family: 'Maven Pro', sans-serif; }
 
-.inline-list .list-item, .sub-title {
+body, .inline-list .list-item, .sub-title {
   font-family: 'Libre Baskerville', serif; }
 
 body {
-  background: #fff; }
+  background: #fff;
+  padding: 0 30px; }
+
+::selection {
+  background: #edb5b0;
+  /* Safari */ }
+
+::-moz-selection {
+  background: #edb5b0;
+  /* Firefox */ }
 
 a {
   position: relative;
@@ -2411,12 +2420,34 @@ a {
     bottom: -5px;
     opacity: 1; }
 
-.container {
-  font-size: 32px;
-  color: #231f20; }
+section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0; }
+  @media screen and (min-width: 600px) {
+    section {
+      width: 80%; } }
+  @media screen and (min-width: 900px) {
+    section {
+      width: 70%; } }
+
+p {
+  line-height: 1.45em;
+  margin-bottom: 35px;
+  opacity: 0;
+  -webkit-animation: fadeIn 1s 1s forwards;
+  animation: fadeIn 1s 1s forwards; }
+  p:last-of-type {
+    margin-bottom: 0;
+    -webkit-animation: fadeIn 1s 1.5s forwards;
+    animation: fadeIn 1s 1.5s forwards; }
 
 nav, header {
   margin: 50px 0;
+  text-align: center; }
+
+footer {
+  margin: 35px 0 0;
   text-align: center; }
 
 .inline-list .list-item {
@@ -2443,6 +2474,8 @@ nav, header {
   margin: 0 auto;
   background: transparent;
   border: 5px solid #c0392b; }
+  .saffron:hover {
+    cursor: pointer; }
 
 .c-1 {
   -webkit-animation: turnDownIn 1s 0s forwards;

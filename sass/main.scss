@@ -1,4 +1,7 @@
 $translateY-distance: 5px;
+$tablet: 600px;
+$desktop: 900px;
+
 @import "saffron/saffron";
 @import "reset";
 @import "fonts";
@@ -6,6 +9,15 @@ $translateY-distance: 5px;
 
 body {
   background: #fff;
+  @extend %libre-baskerville;
+  padding: 0 30px;
+}
+
+::selection {
+  background: lighten(#c0392b, 35%); /* Safari */
+  }
+::-moz-selection {
+  background: lighten(#c0392b, 35%); /* Firefox */
 }
 
 a {
@@ -31,14 +43,37 @@ a {
   }
 }
 
-.container {
-  font-size: 32px;
-  color: #231f20;
+section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  @media screen and (min-width: $tablet) {
+    width: 80%;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 70%;
+  }
+}
+
+p {
+  line-height: 1.45em;
+  margin-bottom: 35px;
+  opacity: 0;
+  @include fadeIn($delay: 1s);
+  &:last-of-type {
+    margin-bottom: 0;
+    @include fadeIn($delay: 1.5s);
+  }
 }
 
 nav,
 header {
   margin: 50px 0;
+  text-align: center;
+}
+
+footer {
+  margin: 35px 0 0;
   text-align: center;
 }
 
@@ -77,6 +112,9 @@ header {
   margin: 0 auto;
   background: transparent;
   border: 5px solid #c0392b;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 
