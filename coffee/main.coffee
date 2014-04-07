@@ -3,8 +3,6 @@ document.addEventListener "DOMContentLoaded", ->
     maxClassNumber = 15
     classNumber = 1
 
-    figure.addEventListener "click", changeClass
-
     changeClass = ->
         figure.classList.remove "c-#{classNumber}"
 
@@ -14,3 +12,5 @@ document.addEventListener "DOMContentLoaded", ->
             classNumber = 1
 
         figure.classList.add "c-#{classNumber}"
+
+    figure.addEventListener "click", changeClass

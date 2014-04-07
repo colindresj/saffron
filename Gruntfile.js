@@ -19,7 +19,7 @@ module.exports = function(grunt) {
         tasks: ['clean:styles', 'sass', 'cssmin']
       },
       scripts: {
-        files: ['js/main.js'],
+        files: ['coffee/main.coffee'],
         tasks: ['clean:scripts', 'coffee', 'uglify']
       },
       livereload: {
@@ -62,8 +62,10 @@ module.exports = function(grunt) {
       }
     },
     coffee: {
-      files: {
-        'js/main.js': 'coffee/main.coffee',
+      main: {
+        files: {
+          'js/main.js': 'coffee/main.coffee',
+        }
       }
     },
     jshint: {
