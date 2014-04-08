@@ -22,6 +22,8 @@
     "lib",
     "tasks",
     "Gemfile",
-    "Rakefile"
+    "Gemfile.lock",
+    "Rakefile",
+    "saffron.gemspec"
   ]
 }
