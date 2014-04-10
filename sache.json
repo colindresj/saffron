@@ -1,0 +1,5 @@
+{
+  "name": "Saffron",
+  "description": "A simple sass mixin library for animations and transitions",
+  "tags": ["mixins", "animations", "transitions", "css3", "gem"]
+}
