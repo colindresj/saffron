@@ -1,7 +1,7 @@
-{
+e{
   "name": "saffron",
   "description": "A simple sass mixin library for animations and transitions.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "keywords": [
     "sass",
     "scss",
