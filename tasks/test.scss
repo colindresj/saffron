@@ -7,7 +7,7 @@
   background: red;
   text-align: center;
   padding-left: 0;
-  @include flip();
+  @include teeter();
   &:hover {
   }
 }

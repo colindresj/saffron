@@ -290,8 +290,8 @@
 @-webkit-keyframes fadeInZoomBig {
   0% {
     opacity: 0;
-    -webkit-transform: scale(0) translateZ(0);
-            transform: scale(0) translateZ(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
 
   60% {
@@ -314,7 +314,7 @@
 @-moz-keyframes fadeInZoomBig {
   0% {
     opacity: 0;
-    transform: scale(0) translateZ(0);
+    transform: scale(0);
   }
 
   60% {
@@ -334,7 +334,7 @@
 @-o-keyframes fadeInZoomBig {
   0% {
     opacity: 0;
-    transform: scale(0) translateZ(0);
+    transform: scale(0);
   }
 
   60% {
@@ -354,9 +354,9 @@
 @keyframes fadeInZoomBig {
   0% {
     opacity: 0;
-    -webkit-transform: scale(0) translateZ(0);
-        -ms-transform: scale(0) translateZ(0);
-            transform: scale(0) translateZ(0);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
   }
 
   60% {
@@ -711,7 +711,7 @@
   }
 }
 
-@-webkit-keyframes turnDownIn {
+@-webkit-keyframes turnInDown {
   0% {
     opacity: 0;
     -webkit-transform: perspective(500px) rotateX(-225deg) translateZ(150px);
@@ -729,7 +729,7 @@
   }
 }
 
-@-moz-keyframes turnDownIn {
+@-moz-keyframes turnInDown {
   0% {
     opacity: 0;
     transform: perspective(500px) rotateX(-225deg) translateZ(150px);
@@ -745,7 +745,7 @@
   }
 }
 
-@-o-keyframes turnDownIn {
+@-o-keyframes turnInDown {
   0% {
     opacity: 0;
     transform: perspective(500px) rotateX(-225deg) translateZ(150px);
@@ -761,7 +761,7 @@
   }
 }
 
-@keyframes turnDownIn {
+@keyframes turnInDown {
   0% {
     opacity: 0;
     -webkit-transform: perspective(500px) rotateX(-225deg) translateZ(150px);
@@ -781,7 +781,7 @@
   }
 }
 
-@-webkit-keyframes turnUpIn {
+@-webkit-keyframes turnInUp {
   0% {
     opacity: 0;
     -webkit-transform: perspective(500px) rotateX(225deg) translateZ(150px);
@@ -799,7 +799,7 @@
   }
 }
 
-@-moz-keyframes turnUpIn {
+@-moz-keyframes turnInUp {
   0% {
     opacity: 0;
     transform: perspective(500px) rotateX(225deg) translateZ(150px);
@@ -815,7 +815,7 @@
   }
 }
 
-@-o-keyframes turnUpIn {
+@-o-keyframes turnInUp {
   0% {
     opacity: 0;
     transform: perspective(500px) rotateX(225deg) translateZ(150px);
@@ -831,7 +831,7 @@
   }
 }
 
-@keyframes turnUpIn {
+@keyframes turnInUp {
   0% {
     opacity: 0;
     -webkit-transform: perspective(500px) rotateX(225deg) translateZ(150px);
@@ -853,8 +853,8 @@
 
 @-webkit-keyframes stretch {
   0% {
-    -webkit-transform: scaleY(0) translateZ(0);
-            transform: scaleY(0) translateZ(0);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
   }
 
   40% {
@@ -890,7 +890,7 @@
 
 @-moz-keyframes stretch {
   0% {
-    transform: scaleY(0) translateZ(0);
+    transform: scaleY(0);
   }
 
   40% {
@@ -920,7 +920,7 @@
 
 @-o-keyframes stretch {
   0% {
-    transform: scaleY(0) translateZ(0);
+    transform: scaleY(0);
   }
 
   40% {
@@ -950,9 +950,9 @@
 
 @keyframes stretch {
   0% {
-    -webkit-transform: scaleY(0) translateZ(0);
-        -ms-transform: scaleY(0) translateZ(0);
-            transform: scaleY(0) translateZ(0);
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
   }
 
   40% {
@@ -1707,8 +1707,8 @@
 @-webkit-keyframes poof {
   0% {
     opacity: 1;
-    -webkit-transform: scale(1) translateZ(0);
-            transform: scale(1) translateZ(0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
 
     -webkit-filter: blur(0);
   }
@@ -1725,7 +1725,7 @@
 @-moz-keyframes poof {
   0% {
     opacity: 1;
-    transform: scale(1) translateZ(0);
+    transform: scale(1);
 
     -webkit-filter: blur(0);
   }
@@ -1741,7 +1741,7 @@
 @-o-keyframes poof {
   0% {
     opacity: 1;
-    transform: scale(1) translateZ(0);
+    transform: scale(1);
 
     -webkit-filter: blur(0);
   }
@@ -1757,9 +1757,9 @@
 @keyframes poof {
   0% {
     opacity: 1;
-    -webkit-transform: scale(1) translateZ(0);
-        -ms-transform: scale(1) translateZ(0);
-            transform: scale(1) translateZ(0);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
 
     -webkit-filter: blur(0);
   }

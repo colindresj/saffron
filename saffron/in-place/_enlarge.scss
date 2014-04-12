@@ -1,6 +1,5 @@
 @mixin enlarge($selector: ":hover", $duration: 0.5s, $delay: 0s, $timing: cubic-bezier(1.000, -0.600, 0.595, 0.835)) {
   @include transition(all $duration $delay $timing);
-  @include transform(translateY(0) scale(1) translateZ(0));
   &#{$selector} {
     @include transform(translateY($enlarge-contract-jump * -1) scale($enlarge-contract-multiple));
   }
