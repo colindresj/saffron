@@ -1,4 +1,4 @@
-@include keyframes(turnDownIn) {
+@include keyframes(turnInDown) {
   0% {
     opacity: 0;
     @include transform(perspective(500px) rotateX($turn-angle * -1) translateZ(150px));
@@ -10,11 +10,11 @@
   }
 }
 
-@mixin turnDownIn($duration: 1s, $delay: 0s, $fill-mode: forwards) {
-  @include animation(turnDownIn $duration $delay $fill-mode);
+@mixin turnInDown($duration: 1s, $delay: 0s, $fill-mode: forwards) {
+  @include animation(turnInDown $duration $delay $fill-mode);
 }
 
-@include keyframes(turnUpIn) {
+@include keyframes(turnInUp) {
   0% {
     opacity: 0;
     @include transform(perspective(500px) rotateX($turn-angle) translateZ(150px));
@@ -26,6 +26,6 @@
   }
 }
 
-@mixin turnUpIn($duration: 1s, $delay: 0s, $fill-mode: forwards) {
-  @include animation(turnUpIn $duration $delay $fill-mode);
+@mixin turnInUp($duration: 1s, $delay: 0s, $fill-mode: forwards) {
+  @include animation(turnInUp $duration $delay $fill-mode);
 }
