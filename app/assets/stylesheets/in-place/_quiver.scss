@@ -3,34 +3,34 @@
     @include transform(translate3d(2px, 1px, 0) rotate(0deg));
   }
   10% {
-    @include transform(translate3d(-1px, 2px, 0) rotate($quiver-angle));
+    @include transform(translate3d(-1px, 2px, 0) rotate($saf-quiver-angle));
   }
   20% {
-    @include transform(translate3d(-3px, 0) rotate($quiver-angle * -1));
+    @include transform(translate3d(-3px, 0) rotate($saf-quiver-angle * -1));
   }
   30% {
     @include transform(translate3d(0, 2px, 0) rotate(0deg));
   }
   40% {
-    @include transform(translate3d(1px, -1px, 0) rotate($quiver-angle));
+    @include transform(translate3d(1px, -1px, 0) rotate($saf-quiver-angle));
   }
   50% {
-    @include transform(translate3d(-1px, 2px, 0) rotate($quiver-angle * -1));
+    @include transform(translate3d(-1px, 2px, 0) rotate($saf-quiver-angle * -1));
   }
   60% {
     @include transform(translate3d(-3px, 1px, 0) rotate(0deg));
   }
   70% {
-    @include transform(translate3d(2px, 1px, 0) rotate($quiver-angle));
+    @include transform(translate3d(2px, 1px, 0) rotate($saf-quiver-angle));
   }
   80% {
-    @include transform(translate3d(-1px, -1px, 0) rotate($quiver-angle * -1));
+    @include transform(translate3d(-1px, -1px, 0) rotate($saf-quiver-angle * -1));
   }
   90% {
     @include transform(translate3d(2px, 2px, 0) rotate(0deg));
   }
   100% {
-    @include transform(translate3d(1px, -2px, 0) rotate($quiver-angle));
+    @include transform(translate3d(1px, -2px, 0) rotate($saf-quiver-angle));
   }
 
 }

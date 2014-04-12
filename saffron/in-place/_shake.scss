@@ -3,19 +3,19 @@
     @include transform(translateX(0) translateZ(0));
   }
   15% {
-    @include transform(translateX($shake-distance));
+    @include transform(translateX($saf-shake-distance));
   }
   35% {
-    @include transform(translateX($shake-distance * -1));
+    @include transform(translateX($saf-shake-distance * -1));
   }
   50% {
-    @include transform(translateX($shake-distance / 2));
+    @include transform(translateX($saf-shake-distance / 2));
   }
   65% {
-    @include transform(translateX($shake-distance / 2 * -1));
+    @include transform(translateX($saf-shake-distance / 2 * -1));
   }
   85% {
-    @include transform(translateX($shake-distance / 3));
+    @include transform(translateX($saf-shake-distance / 3));
   }
 }
 

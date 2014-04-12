@@ -1,5 +1,5 @@
 @mixin keyframes($name) {
-  @each $prefix in $prefixes {
+  @each $prefix in $saf-prefixes {
     @if $prefix == "webkit" {
       @-webkit-keyframes #{$name} {
         @include prefix-only($prefix);

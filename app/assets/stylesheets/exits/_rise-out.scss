@@ -5,7 +5,7 @@
   }
   100% {
     opacity: 0;
-    @include transform(translateY($drop-rise-distance * -1));
+    @include transform(translateY($saf-drop-rise-distance * -1));
   }
 }
 

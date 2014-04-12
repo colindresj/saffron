@@ -1,4 +1,4 @@
-@mixin prefix($property, $value, $prefixes: $prefixes) {
+@mixin prefix($property, $value, $prefixes: $saf-prefixes) {
   @each $prefix in $prefixes {
     @if $prefix == "webkit" {
       -webkit-#{$property}: #{$value};

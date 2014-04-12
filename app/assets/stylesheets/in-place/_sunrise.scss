@@ -1,9 +1,9 @@
 @include keyframes(sunrise) {
   0% {
-    @include transform(rotate(0deg) translate($sunrise-arch) rotate(0deg));
+    @include transform(rotate(0deg) translate($saf-sunrise-arch) rotate(0deg));
   }
   100% {
-    @include transform(rotate(180deg) translate($sunrise-arch) rotate(-180deg));
+    @include transform(rotate(180deg) translate($saf-sunrise-arch) rotate(-180deg));
   }
 }
 

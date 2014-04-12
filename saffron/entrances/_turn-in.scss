@@ -1,7 +1,7 @@
 @include keyframes(turnInDown) {
   0% {
     opacity: 0;
-    @include transform(perspective(500px) rotateX($turn-angle * -1) translateZ(150px));
+    @include transform(perspective(500px) rotateX($saf-turn-angle * -1) translateZ(150px));
   }
   100% {
     opacity: 1;
@@ -17,7 +17,7 @@
 @include keyframes(turnInUp) {
   0% {
     opacity: 0;
-    @include transform(perspective(500px) rotateX($turn-angle) translateZ(150px));
+    @include transform(perspective(500px) rotateX($saf-turn-angle) translateZ(150px));
   }
   100% {
     opacity: 1;

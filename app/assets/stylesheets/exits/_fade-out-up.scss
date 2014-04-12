@@ -5,7 +5,7 @@
   }
   100% {
     opacity: 0;
-    @include transform(translateY($translateY-distance * -1));
+    @include transform(translateY($saf-translateY-distance * -1));
   }
 }
 

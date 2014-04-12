@@ -5,7 +5,7 @@
   }
   50% {
     opacity: 0.85;
-    @include transform(scale($pulsate-scale));
+    @include transform(scale($saf-pulsate-scale));
   }
 }
 

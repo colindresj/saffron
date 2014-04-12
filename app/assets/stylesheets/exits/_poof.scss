@@ -1,7 +1,7 @@
 @include keyframes(poof) {
   0% {
     opacity: 1;
-    @include transform(scale(1) translateZ(0));
+    @include transform(scale(1));
     -webkit-filter: blur(0);
   }
 
@@ -12,6 +12,6 @@
   }
 }
 
-@mixin poof($duration: 0.75s, $delay: 0s, $fill-mode: forwards) {
+@mixin poof($duration: 0.85s, $delay: 0s, $fill-mode: forwards) {
   @include animation(poof $duration $delay $fill-mode);
 }

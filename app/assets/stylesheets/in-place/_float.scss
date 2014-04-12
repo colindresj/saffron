@@ -1,12 +1,12 @@
 @include keyframes(float) {
   0%, 50%, 100% {
-    @include transform(translateY($float-bob-distance * -1) translateZ(0));
+    @include transform(translateY($saf-float-bob-distance * -1) translateZ(0));
   }
   25% {
-    @include transform(translateY($float-bob-distance) rotate($float-bob-angle));
+    @include transform(translateY($saf-float-bob-distance) rotate($saf-float-bob-angle));
   }
   75% {
-    @include transform(translateY($float-bob-distance) rotate($float-bob-angle * -1));
+    @include transform(translateY($saf-float-bob-distance) rotate($saf-float-bob-angle * -1));
   }
 }
 

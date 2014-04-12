@@ -1,12 +1,12 @@
 @include keyframes(sway) {
   0%, 50%, 100% {
-    @include transform(rotate($sway-angle) translateZ(0));
+    @include transform(rotate($saf-sway-angle) translateZ(0));
   }
   25% {
-    @include transform(rotate($sway-angle * -1));
+    @include transform(rotate($saf-sway-angle * -1));
   }
   75% {
-    @include transform(rotate($sway-angle * -1));
+    @include transform(rotate($saf-sway-angle * -1));
   }
 }
 
