@@ -1,5 +1,5 @@
 #Saffron
-[![Build Status](https://travis-ci.org/corporadobob/saffron.svg?branch=master)](https://travis-ci.org/corporadobob/saffron)
+[![Build Status](https://travis-ci.org/colindresj/saffron.svg?branch=v0.2.2)](https://travis-ci.org/colindresj/saffron)
 [![Gem Version](https://badge.fury.io/rb/saffron.svg)](http://badge.fury.io/rb/saffron)
 
 > A simple sass mixin library for animations and transitions.
