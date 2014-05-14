@@ -2,10 +2,10 @@
 [![Build Status](https://travis-ci.org/colindresj/saffron.svg?branch=v0.2.2)](https://travis-ci.org/colindresj/saffron)
 [![Gem Version](https://badge.fury.io/rb/saffron.svg)](http://badge.fury.io/rb/saffron)
 
-> A simple sass mixin library for animations and transitions.
+> A simple Sass mixin library for animations and transitions.
 
-Saffron is a collection of sass mixins and helpers that make adding CSS3 animations and transitions much simpler.
-Just include a mixin in your sass declaration, then set any configuration using variables and mixin parameters.
+Saffron is a collection of Sass mixins and helpers that make adding CSS3 animations and transitions much simpler.
+Just include a mixin in your Sass declaration, then set any configuration using variables and mixin parameters.
 
 ###Requirements
 Sass 3.2+
@@ -13,14 +13,14 @@ Sass 3.2+
 ##Installing
 ###Standard Installation
 Install the gem from the command line with `gem install saffron`, then `cd` into the directory where you want to install Saffron and run the installation command:
-```
+```bash
 saffron install
 ```
 You can also use the `-p` flag to install Saffron into a relative directory:
-```
+```bash
 saffron install -p path/to/directory/
 ```
-Finally, import the mixins into your main scss file:
+Finally, import the mixins into your main SCSS file:
 ```scss
   @import "saffron/saffron";
 ```
@@ -49,11 +49,11 @@ No matter how you installed Saffron, you can now use any of the mixins:
 
 ##Updating
 To get the latest mixins you should update the Saffron files every once in a while. You can do so by running:
-```
+```bash
 saffron update
 ```
 If you initially installed Saffron in a specific directory using the `-p` flag, you'll need to do the the same when updating:
-```
+```bash
 saffron update -p path/to/directory/
 ```
 
