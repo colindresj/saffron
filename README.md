@@ -35,6 +35,10 @@ Run `bundle install` to make all the mixins available to your Rails application,
 @import "saffron";
 ```
 
+###Bower
+Saffron is available on [Bower](http://bower.io/). Run `bower install saffron` to get the latest tagged version of Saffron
+from Bower. Unless you've changed the default directory, Saffron will be installed into your `bower_componenents` directory within the `saffron` subdirectory.
+
 ###Manual Installation
 Download or clone the project repo from GitHub. Copy the `saffron` folder and paste into your `sass` folder (or whatever you call it). You won't need any of the other directories or files.
 ```scss
