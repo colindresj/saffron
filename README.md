@@ -66,5 +66,8 @@ Saffron uses CSS3 transform, keyframes, animations and transitions, so it's real
 
 All the mixins compile down to vendor prefixed CSS, and have been tested on the latest versions of Chrome, Safari, Firefox and Opera. I aim to do more browser testing and hope to increase compatability, especially for IE.
 
+##Stylus
+If you're more of a Stylus user, check out [@willhoag](https://github.com/willhoag)'s port: [Saffron-Stylus](https://github.com/willhoag/saffron-stylus).
+
 ##License
 MIT
