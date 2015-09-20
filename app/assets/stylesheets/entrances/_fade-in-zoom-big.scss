@@ -1,20 +1,20 @@
-@include keyframes(fadeInZoomBig) {
+@include u-keyframes(fadeInZoomBig) {
   0% {
     opacity: 0;
-    @include transform(scale(0));
+    @include u-transform(scale(0));
   }
   60% {
-    @include transform(scale(1.25));
+    @include u-transform(scale(1.25));
   }
   80% {
-    @include transform(scale(0.95));
+    @include u-transform(scale(0.95));
   }
   100% {
     opacity: 1;
-    @include transform(scale(1));
+    @include u-transform(scale(1));
   }
 }
 
 @mixin fadeInZoomBig($duration: 1s, $delay: 0s, $fill-mode: forwards) {
-  @include animation(fadeInZoomBig $duration $delay $fill-mode);
+  @include u-animation(fadeInZoomBig $duration $delay $fill-mode);
 }

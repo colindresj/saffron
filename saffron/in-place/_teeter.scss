@@ -1,29 +1,29 @@
-@include keyframes(teeter) {
+@include u-keyframes(teeter) {
   0%, 100% {
-    @include transform(rotate(0deg) translateZ(0));
+    @include u-transform(rotate(0deg) translateZ(0));
   }
   15% {
-    @include transform(rotate($saf-teeter-angle));
+    @include u-transform(rotate($saf-teeter-angle));
   }
   30% {
-    @include transform(rotate($saf-teeter-angle * -1));
+    @include u-transform(rotate($saf-teeter-angle * -1));
   }
   45% {
-    @include transform(rotate($saf-teeter-angle / 2));
+    @include u-transform(rotate($saf-teeter-angle / 2));
   }
   60% {
-    @include transform(rotate($saf-teeter-angle / 2 * -1));
+    @include u-transform(rotate($saf-teeter-angle / 2 * -1));
   }
   73% {
-    @include transform(rotate($saf-teeter-angle / 3));
+    @include u-transform(rotate($saf-teeter-angle / 3));
   }
   86% {
-    @include transform(rotate($saf-teeter-angle / 3 * -1));
+    @include u-transform(rotate($saf-teeter-angle / 3 * -1));
   }
 }
 
 @mixin teeter($duration: 1s, $delay: 0s, $fill-mode: none, $count: 1) {
   // hack to fix jagged edges
   outline: 1px solid transparent;
-  @include animation(teeter $duration $delay $fill-mode $count);
+  @include u-animation(teeter $duration $delay $fill-mode $count);
 }

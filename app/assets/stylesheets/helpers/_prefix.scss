@@ -1,4 +1,4 @@
-@mixin prefix($property, $value, $prefixes: $saf-prefixes) {
+@mixin u-prefix($property, $value, $prefixes: $saf-prefixes) {
   @each $prefix in $prefixes {
     @if $prefix == "webkit" {
       -webkit-#{$property}: #{$value};
@@ -16,7 +16,7 @@
   }
 }
 
-@mixin prefix-all($value: true){
+@mixin u-prefix-all($value: true){
   @if $value {
     $prefixes: ("webkit", "moz", "o", "ms", "spec");
   } @else {
@@ -24,7 +24,7 @@
   }
 }
 
-@mixin prefix-only($only) {
+@mixin u-prefix-only($only) {
   @if $only == "webkit" {
     $prefixes: ("webkit", "spec");
   } @else if $only == "moz" {

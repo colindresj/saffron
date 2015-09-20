@@ -1,23 +1,23 @@
-@mixin keyframes($name) {
+@mixin u-keyframes($name) {
   @each $prefix in $saf-prefixes {
     @if $prefix == "webkit" {
       @-webkit-keyframes #{$name} {
-        @include prefix-only($prefix);
+        @include u-prefix-only($prefix);
         @content;
       }
     } @else if $prefix == "moz" {
       @-moz-keyframes #{$name} {
-        @include prefix-only($prefix);
+        @include u-prefix-only($prefix);
         @content;
       }
     } @else if $prefix == "o" {
       @-o-keyframes #{$name} {
-        @include prefix-only($prefix);
+        @include u-prefix-only($prefix);
         @content;
       }
     } @else if $prefix == "spec" {
       @keyframes #{$name} {
-        @include prefix-all();
+        @include u-prefix-all();
         @content;
       }
     }

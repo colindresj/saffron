@@ -1,36 +1,36 @@
-@include keyframes(quiver) {
+@include u-keyframes(quiver) {
   0%{
-    @include transform(translate3d(2px, 1px, 0) rotate(0deg));
+    @include u-transform(translate3d(2px, 1px, 0) rotate(0deg));
   }
   10% {
-    @include transform(translate3d(-1px, 2px, 0) rotate($saf-quiver-angle));
+    @include u-transform(translate3d(-1px, 2px, 0) rotate($saf-quiver-angle));
   }
   20% {
-    @include transform(translate3d(-3px, 0) rotate($saf-quiver-angle * -1));
+    @include u-transform(translate3d(-3px, 0) rotate($saf-quiver-angle * -1));
   }
   30% {
-    @include transform(translate3d(0, 2px, 0) rotate(0deg));
+    @include u-transform(translate3d(0, 2px, 0) rotate(0deg));
   }
   40% {
-    @include transform(translate3d(1px, -1px, 0) rotate($saf-quiver-angle));
+    @include u-transform(translate3d(1px, -1px, 0) rotate($saf-quiver-angle));
   }
   50% {
-    @include transform(translate3d(-1px, 2px, 0) rotate($saf-quiver-angle * -1));
+    @include u-transform(translate3d(-1px, 2px, 0) rotate($saf-quiver-angle * -1));
   }
   60% {
-    @include transform(translate3d(-3px, 1px, 0) rotate(0deg));
+    @include u-transform(translate3d(-3px, 1px, 0) rotate(0deg));
   }
   70% {
-    @include transform(translate3d(2px, 1px, 0) rotate($saf-quiver-angle));
+    @include u-transform(translate3d(2px, 1px, 0) rotate($saf-quiver-angle));
   }
   80% {
-    @include transform(translate3d(-1px, -1px, 0) rotate($saf-quiver-angle * -1));
+    @include u-transform(translate3d(-1px, -1px, 0) rotate($saf-quiver-angle * -1));
   }
   90% {
-    @include transform(translate3d(2px, 2px, 0) rotate(0deg));
+    @include u-transform(translate3d(2px, 2px, 0) rotate(0deg));
   }
   100% {
-    @include transform(translate3d(1px, -2px, 0) rotate($saf-quiver-angle));
+    @include u-transform(translate3d(1px, -2px, 0) rotate($saf-quiver-angle));
   }
 
 }
@@ -38,5 +38,5 @@
 @mixin quiver($duration: 0.75s, $delay: 0s, $fill-mode: none, $count: infinite) {
   // hack to fix jagged edges
   outline: 1px solid transparent;
-  @include animation(quiver $duration $delay $fill-mode $count);
+  @include u-animation(quiver $duration $delay $fill-mode $count);
 }

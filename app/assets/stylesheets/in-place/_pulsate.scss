@@ -1,14 +1,14 @@
-@include keyframes(pulsate) {
+@include u-keyframes(pulsate) {
   0%, 100% {
     opacity: 1;
-    @include transform(scale(1) translateZ(0));
+    @include u-transform(scale(1) translateZ(0));
   }
   50% {
     opacity: 0.85;
-    @include transform(scale($saf-pulsate-scale));
+    @include u-transform(scale($saf-pulsate-scale));
   }
 }
 
 @mixin pulsate($duration: 1.5s, $delay: 0s, $fill-mode: none, $count: 3) {
-  @include animation(pulsate $count $duration $delay $fill-mode);
+  @include u-animation(pulsate $count $duration $delay $fill-mode);
 }

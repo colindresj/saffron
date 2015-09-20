@@ -1,7 +1,7 @@
-@mixin transition ($properties...) {
-  @if contains($saf-prefixes, "webkit") {
-    @include prefix(transition, $properties, webkit spec);
+@mixin u-transition ($properties...) {
+  @if u-contains($saf-prefixes, "webkit") {
+    @include u-prefix(transition, $properties, webkit spec);
   } @else {
-    @include prefix(transition, $properties, spec);
+    @include u-prefix(transition, $properties, spec);
   }
 }
