@@ -24,10 +24,10 @@
 
 @mixin stretchUp($duration: 1.75s, $delay: 0s, $count: 1, $fill-mode: both, $timing: ease-out) {
   @include u-animation(stretch $count $duration $delay $fill-mode $timing);
-  @include u-prefix(u-transform-origin, 0 100%, webkit moz spec);
+  @include u-prefix(transform-origin, 0 100%, webkit moz spec);
 }
 
 @mixin stretchDown($duration: 1.75s, $delay: 0s, $count: 1, $fill-mode: both, $timing: ease-out) {
   @include u-animation(stretch $count $duration $delay $fill-mode $timing);
-  @include u-prefix(u-transform-origin, 0 0, webkit moz spec);
+  @include u-prefix(transform-origin, 0 0, webkit moz spec);
 }
