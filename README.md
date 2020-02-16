@@ -51,6 +51,13 @@ No matter how you installed Saffron, you can now use any of the mixins:
 }
 ```
 
+## Example of usage
+body{
+  animation-name: teeter;
+  animation-duration: 1s;
+}
+
+
 ## Updating
 To get the latest mixins you should update the Saffron files every once in a while. You can do so by running:
 ```bash
